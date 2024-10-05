@@ -251,7 +251,7 @@ function App() {
         </div>
         <div className="flex flex-col justify-end gap-[6px] items-center text-white w-1/3">
           <p className="font-light text-silver">©️ 2024 The Lake District Book Festival.</p>
-          <p>Made with ❤️ by <a href="https://github.com/Shakey343" target="_blank" className="font-medium hover:font-bold transition-all">Jake Pople</a></p>
+          <p>Made with ❤️ by <a href="https://github.com/Shakey343" target="_blank" className="font-medium hover:text-jonquil transition-all">Jake Pople</a></p>
         </div>
         <div className="text-jonquil w-1/3 flex flex-col items-end">
           <h4 className="text-[32px] font-light">Subscribe</h4>
