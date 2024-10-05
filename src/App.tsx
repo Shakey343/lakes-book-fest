@@ -17,7 +17,7 @@ function App() {
           Bringing the world to the Lakes
           <br /> & the Lakes to the world
         </h2>
-        <Button className="mt-7 w-fit bg-jonquil text-night">
+        <Button className="mt-7 w-fit bg-jonquil text-night" href="#support">
           Support Us
         </Button>
         <img
@@ -154,7 +154,7 @@ function App() {
           />
         </div>
 
-        <div className="bg-grey flex flex-col items-center gap-[100px] px-[80px] py-[160px]">
+        <div className="bg-grey flex flex-col items-center gap-[100px] px-[80px] py-[160px]" id="support">
           <h2 className="text-[88px] font-light text-silver">Support us</h2>
           <div className="flex flex-col gap-[80px] w-full">
             <div className="flex justify-between w-full px-[176px]">
@@ -201,7 +201,7 @@ function App() {
               </div>
             </div>
           </div>
-          <Button className="w-fit bg-jonquil text-night">
+          <Button className="w-fit bg-jonquil text-night" href="#">
             More details
           </Button>
         </div>

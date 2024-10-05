@@ -3,9 +3,11 @@ import { ReactNode } from 'react'
 
 const Button = ({
   className,
-  children
+  children,
+  href
 }: {
   className: string;
+  href: string;
   children: ReactNode;
 }) => {
   return (
@@ -15,7 +17,7 @@ const Button = ({
         "hover:bg-gradient-to-r hover:from-night/5 hover:to-night/5 transition-all",
         className
       )}
-      // onClick=""
+      href={href}
     >
       {children}
     </a>
