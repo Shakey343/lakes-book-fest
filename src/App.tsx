@@ -1,5 +1,7 @@
 import FeatherImg from "./assets/gold_feather.png";
 import mapImg from "./assets/map.png";
+import cartmelImg from "./assets/cartmel_priory.png";
+import bookImg from "./assets/school_book.png";
 import Button from "./components/Button";
 import WhoCards from "./components/WhoCards";
 
@@ -15,7 +17,7 @@ function App() {
           Bringing the world to the Lakes
           <br /> & the Lakes to the world
         </h2>
-        <Button className="border mt-7 w-fit bg-jonquil text-night">
+        <Button className="mt-7 w-fit bg-jonquil text-night">
           Support Us
         </Button>
         <img
@@ -69,7 +71,9 @@ function App() {
             </h2>
             <div className="flex flex-col gap-[30px]">
               <div className="flex flex-col gap-[10px]">
-                <h3 className="text-[32px] font-light">Closest Train Stations</h3>
+                <h3 className="text-[32px] font-light">
+                  Closest Train Stations
+                </h3>
                 <ul className="leading-relaxed">
                   <li>Cark in Cartmel - 5 minutes drive</li>
                   <li>Oxenholme - 30 minutes</li>
@@ -101,18 +105,106 @@ function App() {
           />
         </div>
 
-        <div className="px-[80px] py-[40px] flex flex-col gap-[40px]">
-          <h2 className="text-[44px] font-light">About Cartmel</h2>
-          <h3 className="quote">A thimble full of diamonds</h3>
-          <ul className="py-[60px] list-disc list-inside marker:text-fire-red">
-            <li>Cartmel Priory (est. 1189)</li>
-            <li>A host of pubs, cafés and artisanal food shops</li>
-            <li>L'Enclume (Michelin 3-star restaurant, Head Chef Simon Rogan)</li>
-            <li>Cartmel Sticky Toffee Pudding</li>
-          </ul>
+        <div className="px-[80px] py-[40px] h-[580px] relative overflow-hidden">
+          <div className="flex flex-col gap-[40px]">
+            <h2 className="text-[44px] font-light">About Cartmel</h2>
+            <h3 className="quote">A thimble full of diamonds</h3>
+            <ul className="py-[60px] list-disc list-inside marker:text-fire-red">
+              <li>Cartmel Priory (est. 1189)</li>
+              <li>A host of pubs, cafés and artisanal food shops</li>
+              <li>
+                L'Enclume (Michelin 3-star restaurant, Head Chef Simon Rogan)
+              </li>
+              <li>Cartmel Sticky Toffee Pudding</li>
+            </ul>
+          </div>
+          <img
+            src={cartmelImg}
+            alt=""
+            className="absolute right-[80px] -top-[51px] h-[800px] object-cover"
+          />
         </div>
 
-        <div className="px-[80px] py-[40px]"></div>
+        <div className="p-[80px] bg-map-grey relative flex flex-col gap-[60px]">
+          <h3 className="text-white font-light text-[44px]">
+            The Schools Programme
+          </h3>
+          <div className="text-[28px] leading-loose tracking-wide">
+            <p>
+              <span className="text-silver">Bringing authors to schools</span>{" "}
+              in Cartmel & surrounding area
+            </p>
+            <p>
+              Bringing schools{" "}
+              <span className="text-silver">to the festival</span>
+            </p>
+            <p>
+              <span className="text-silver">Shining a light on</span> the
+              decline in the teaching of the Humanities
+            </p>
+            <p>
+              Helping to address{" "}
+              <span className="text-silver">local educational deprivation</span>
+            </p>
+          </div>
+          <img
+            src={bookImg}
+            alt=""
+            className="h-[450px] absolute right-[80px] top-[22px]"
+          />
+        </div>
+
+        <div className="bg-grey flex flex-col items-center gap-[100px] px-[80px] py-[160px]">
+          <h2 className="text-[88px] font-light text-silver">Support us</h2>
+          <div className="flex flex-col gap-[80px] w-full">
+            <div className="flex justify-between w-full px-[176px]">
+              <div className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-jonquil">
+                <p>Become a</p>
+                <p className="font-semibold text-[48px] text-center">
+                  founding patron
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-night">
+                <p>Become a</p>
+                <p className="font-semibold text-[48px] text-center">
+                  business sponsor
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col justify-center gap-[30px] w-full">
+              <div className="flex justify-evenly px-[80px] w-full">
+                <div className="flex flex-col items-center justify-center gap-[10px]">
+                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">PRIORITY</h3>
+                  <p>booking</p>
+                </div>
+                <div className="h-[84px] border border-silver"></div>
+                <div className="flex flex-col items-center justify-center gap-[10px]">
+                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">FREE</h3>
+                  <p>tickets</p>
+                </div>
+                <div className="h-[84px] border border-silver"></div>
+                <div className="flex flex-col items-center justify-center gap-[10px]">
+                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">PRIORITY</h3>
+                  <p>parking</p>
+                </div>
+              </div>
+              <div className="flex justify-evenly px-[260px] w-full">
+                <div className="flex flex-col items-center justify-center gap-[10px]">
+                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">GREEN ROOM</h3>
+                  <p>entry</p>
+                </div>
+                <div className="h-[84px] border border-silver"></div>
+                <div className="flex flex-col items-center justify-center gap-[10px]">
+                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">CORPORATE</h3>
+                  <p>hospitality</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <Button className="w-fit bg-jonquil text-night">
+            More details
+          </Button>
+        </div>
       </main>
 
       <div></div>
