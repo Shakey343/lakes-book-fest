@@ -12,7 +12,6 @@
     @apply font-black;
   }
   h2 {
-    @apply text-xl;
     @apply font-serif;
   }
 }
