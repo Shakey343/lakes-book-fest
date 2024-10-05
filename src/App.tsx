@@ -13,10 +13,10 @@ function App() {
           The Lake District
           <br /> Book Festival
         </h1>
-        <h2 className="quote my-8 leading-none text-silver z-10">
+        <p className="quote my-8 leading-none text-silver z-10">
           Bringing the world to the Lakes
           <br /> & the Lakes to the world
-        </h2>
+        </p>
         <Button className="mt-7 w-fit bg-jonquil text-night" href="#support">
           Support Us
         </Button>
@@ -36,12 +36,12 @@ function App() {
           <div className="w-fit mb-[60px] leading-none">
             <h2 className="relative text-[54px] font-light">
               The Festival
-              <div className="absolute right-[76.7px] top-[7px] w-[5.2px] h-[5.2px] rounded-full bg-fire-red"></div>
+              <div className="absolute right-[72.5px] top-[10.5px] w-[4px] h-[4px] rounded-full bg-fire-red"></div>
             </h2>
-            <h3 className="text-[30px] font-light">
-              12th-14th June, 20
+            <p className="text-[30px] font-light">
+              12<sup>th</sup>-14<sup>th</sup> June, 20
               <span className="text-jonquil font-medium">26</span>
-            </h3>
+            </p>
           </div>
           <div className="mx-auto">
             <p className="text-[44px] leading-loose">
@@ -75,25 +75,23 @@ function App() {
                   Closest Train Stations
                 </h3>
                 <ul className="leading-relaxed">
-                  <li>Cark in Cartmel - 5 minutes drive</li>
-                  <li>Oxenholme - 30 minutes</li>
-                  <li>Lancaster - 40 minutes</li>
+                  <li>Cark-in-Cartmel · 5 minutes drive</li>
+                  <li>Oxenholme · 30 minutes</li>
+                  <li>Lancaster · 40 minutes</li>
                 </ul>
               </div>
               <div className="flex flex-col gap-[10px]">
                 <h3 className="text-[32px] font-light">By Car</h3>
                 <ul className="leading-relaxed">
-                  <li>Cark in Cartmel - 5 minutes drive</li>
-                  <li>Oxenholme - 30 minutes</li>
-                  <li>Lancaster - 40 minutes</li>
+                  <li>M6 J36 · 15 miles</li>
+                  <li>Manchester · 85 miles</li>
+                  <li>London · 280 miles</li>
                 </ul>
               </div>
               <div className="flex flex-col gap-[10px]">
                 <h3 className="text-[32px] font-light">By Train</h3>
                 <ul className="leading-relaxed">
-                  <li>Cark in Cartmel - 5 minutes drive</li>
-                  <li>Oxenholme - 30 minutes</li>
-                  <li>Lancaster - 40 minutes</li>
+                  <li>London-Cark · 3h45-4h15</li>
                 </ul>
               </div>
             </div>
@@ -108,7 +106,7 @@ function App() {
         <div className="px-[80px] py-[40px] h-[580px] relative overflow-hidden">
           <div className="flex flex-col gap-[40px]">
             <h2 className="text-[44px] font-light">About Cartmel</h2>
-            <h3 className="quote">A thimble full of diamonds</h3>
+            <p className="quote">A thimble full of diamonds</p>
             <ul className="py-[60px] list-disc list-inside marker:text-fire-red">
               <li>Cartmel Priory (est. 1189)</li>
               <li>A host of pubs, cafés and artisanal food shops</li>
@@ -126,9 +124,9 @@ function App() {
         </div>
 
         <div className="p-[80px] pb-[120px] bg-map-grey relative flex flex-col gap-[60px]">
-          <h3 className="text-white font-light text-[44px]">
+          <h2 className="text-white font-light text-[44px]">
             The Schools Programme
-          </h3>
+          </h2>
           <div className="text-[28px] leading-loose tracking-wide">
             <p>
               <span className="text-silver">Bringing authors to schools</span>{" "}
@@ -154,18 +152,37 @@ function App() {
           />
         </div>
 
-        <div className="bg-grey flex flex-col items-center gap-[100px] px-[80px] py-[160px]" id="support">
+        <div
+          className="bg-grey flex flex-col items-center gap-[100px] px-[80px] py-[160px]"
+          id="support"
+        >
           <h2 className="text-[88px] font-light text-silver">Support us</h2>
           <div className="flex flex-col gap-[80px] w-full">
             <div className="flex justify-between w-full px-[176px]">
-              <a className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-jonquil group hover:border-8 transition-all" href="#">
-                <p className="text-[24px] group-hover:text-[22px] transition-all">Become a</p>
+              <a
+                className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-jonquil group hover:border-8 transition-all relative"
+                href="#"
+              >
+                <p className="text-[24px] group-hover:text-[22px] transition-all">
+                  Become a
+                </p>
                 <p className="font-semibold text-[48px] group-hover:text-[50px] transition-all text-center">
                   founding patron
                 </p>
+                <div className="flex flex-col items-center justify-center gap-[10px] absolute rounded-full -left-[150px] -top-[100px] bg-jonquil h-[240px] w-[240px]">
+                  <p className="text-center text-[32px] font-semibold">
+                    3-year subscription
+                  </p>
+                  <p className="text-center">£1500 p.a. per couple</p>
+                </div>
               </a>
-              <a className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-night group hover:border-8 transition-all" href="#">
-                <p className="text-[24px] group-hover:text-[22px] transition-all">Become a</p>
+              <a
+                className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-night group hover:border-8 transition-all"
+                href="#"
+              >
+                <p className="text-[24px] group-hover:text-[22px] transition-all">
+                  Become a
+                </p>
                 <p className="font-semibold text-[48px] group-hover:text-[50px] transition-all text-center">
                   business sponsor
                 </p>
@@ -174,29 +191,41 @@ function App() {
             <div className="flex flex-col justify-center gap-[30px] w-full">
               <div className="flex justify-evenly px-[80px] w-full">
                 <div className="flex flex-col items-center justify-center gap-[10px]">
-                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">PRIORITY</h3>
-                  <p>booking</p>
+                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
+                    PRIORITY
+                  </h3>
+                  <p className="text-silver text-[32px] font-light">booking</p>
                 </div>
                 <div className="h-[84px] border border-silver"></div>
                 <div className="flex flex-col items-center justify-center gap-[10px]">
-                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">FREE</h3>
-                  <p>tickets</p>
+                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
+                    FREE
+                  </h3>
+                  <p className="text-silver text-[32px] font-light">tickets</p>
                 </div>
                 <div className="h-[84px] border border-silver"></div>
                 <div className="flex flex-col items-center justify-center gap-[10px]">
-                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">PRIORITY</h3>
-                  <p>parking</p>
+                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
+                    PRIORITY
+                  </h3>
+                  <p className="text-silver text-[32px] font-light">parking</p>
                 </div>
               </div>
               <div className="flex justify-evenly px-[260px] w-full">
                 <div className="flex flex-col items-center justify-center gap-[10px]">
-                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">GREEN ROOM</h3>
-                  <p>entry</p>
+                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
+                    GREEN ROOM
+                  </h3>
+                  <p className="text-silver text-[32px] font-light">entry</p>
                 </div>
                 <div className="h-[84px] border border-silver"></div>
                 <div className="flex flex-col items-center justify-center gap-[10px]">
-                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">CORPORATE</h3>
-                  <p>hospitality</p>
+                  <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
+                    CORPORATE
+                  </h3>
+                  <p className="text-silver text-[32px] font-light">
+                    hospitality
+                  </p>
                 </div>
               </div>
             </div>
@@ -207,7 +236,31 @@ function App() {
         </div>
       </main>
 
-      <div></div>
+      <div className="px-[80px] py-[32px] bg-night/80 flex justify-between h-[300px]">
+        <div className="text-jonquil w-1/3">
+          <h4 className="text-[32px] font-light">Contact us</h4>
+          <p>
+            The Lake District Book Festival
+            <br />
+            Kelleth Old Hall
+            <br />
+            Penrith
+            <br />
+            CA10 3UG
+          </p>
+        </div>
+        <div className="flex flex-col justify-end gap-[6px] items-center text-white w-1/3">
+          <p className="font-light text-silver">©️ 2024 The Lake District Book Festival.</p>
+          <p>Made with ❤️ by <a href="https://github.com/Shakey343" target="_blank" className="font-medium hover:font-bold transition-all">Jake Pople</a></p>
+        </div>
+        <div className="text-jonquil w-1/3 flex flex-col items-end">
+          <h4 className="text-[32px] font-light">Subscribe</h4>
+          <form action="#" className="flex flex-col w-[160px]">
+            <input type="text" />
+            <button type="submit" className="border">subscribe</button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }

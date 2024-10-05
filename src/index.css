@@ -15,7 +15,10 @@
     @apply font-black;
   }
   h2 {
-    @apply font-serif;
+    @apply font-aldelphi;
+  }
+  h3 {
+    @apply font-georgia;
   }
 }
 
