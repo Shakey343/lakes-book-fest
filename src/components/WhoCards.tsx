@@ -52,7 +52,7 @@ const WhoCards = () => {
         src={member.imgUrl}
         alt={member.imgUrlAlt}
       />
-      <h4 className="text-night text-[22px] text-black-olive group-hover:text-[24px]">
+      <h4 className="text-night text-[22px] text-black-olive group-hover:text-[24px] transition-all">
         {member.role}
       </h4>
     </a>
