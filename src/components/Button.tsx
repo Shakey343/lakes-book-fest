@@ -11,8 +11,8 @@ const Button = ({
   return (
     <a
       className={cn(
-        "cursor-pointer py-3 px-8 rounded-full shadow-lg font-medium",
-        "hover:bg-gradient-to-r hover:from-night/5 hover:to-night/5 transition-all hover:shadow-xl",
+        "cursor-pointer py-3 px-8 rounded-full shadow-md font-medium",
+        "hover:bg-gradient-to-r hover:from-night/5 hover:to-night/5 transition-all",
         className
       )}
       // onClick=""

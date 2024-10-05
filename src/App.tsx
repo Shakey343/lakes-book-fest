@@ -125,7 +125,7 @@ function App() {
           />
         </div>
 
-        <div className="p-[80px] bg-map-grey relative flex flex-col gap-[60px]">
+        <div className="p-[80px] pb-[120px] bg-map-grey relative flex flex-col gap-[60px]">
           <h3 className="text-white font-light text-[44px]">
             The Schools Programme
           </h3>
@@ -158,18 +158,18 @@ function App() {
           <h2 className="text-[88px] font-light text-silver">Support us</h2>
           <div className="flex flex-col gap-[80px] w-full">
             <div className="flex justify-between w-full px-[176px]">
-              <div className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-jonquil">
-                <p>Become a</p>
-                <p className="font-semibold text-[48px] text-center">
+              <a className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-jonquil group hover:border-8 transition-all" href="#">
+                <p className="text-[24px] group-hover:text-[22px] transition-all">Become a</p>
+                <p className="font-semibold text-[48px] group-hover:text-[50px] transition-all text-center">
                   founding patron
                 </p>
-              </div>
-              <div className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-night">
-                <p>Become a</p>
-                <p className="font-semibold text-[48px] text-center">
+              </a>
+              <a className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-night group hover:border-8 transition-all" href="#">
+                <p className="text-[24px] group-hover:text-[22px] transition-all">Become a</p>
+                <p className="font-semibold text-[48px] group-hover:text-[50px] transition-all text-center">
                   business sponsor
                 </p>
-              </div>
+              </a>
             </div>
             <div className="flex flex-col justify-center gap-[30px] w-full">
               <div className="flex justify-evenly px-[80px] w-full">
