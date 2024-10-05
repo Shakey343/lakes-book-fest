@@ -64,7 +64,7 @@ function App() {
         <div className="px-[80px] py-[40px] h-[800px] bg-map-grey relative">
           <div className="absolute top-0 left-0 bg-map-grey w-[470px] h-full z-10"></div>
           <div className="z-20 relative w-fit">
-            <h2 className="text-[44px] text-white font-light leading-tight">
+            <h2 className="text-[44px] text-white font-light leading-tight mb-[40px]">
               Location &<br /> Links
             </h2>
             <div className="flex flex-col gap-[30px]">
@@ -96,7 +96,7 @@ function App() {
           </div>
           <img
             src={mapImg}
-            alt=""
+            alt="A partial map of cumbria, showing the local train stations and festival location"
             className="absolute right-0 top-0 h-[800px] overflow-hidden object-cover object-right"
           />
         </div>
