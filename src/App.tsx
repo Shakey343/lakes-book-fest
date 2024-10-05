@@ -8,6 +8,15 @@ import WhoCards from "./components/WhoCards";
 function App() {
   return (
     <div>
+      <nav className="fixed h-[420px] top-[280px] right-[40px] border border-fire-red z-40">
+        <button className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[70px] -left-[5px]"></button>
+        <button className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[159px] -left-[5px]"></button>
+        <button className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[248px] -left-[5px]"></button>
+        <button className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[337px] -left-[5px]"></button>
+        <button className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[70px] -left-[5px]"></button>
+        <button className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[70px] -left-[5px]"></button>
+      </nav>
+
       <div className="flex flex-col justify-evenly py-[160px] px-[80px] relative bg-night text-white">
         <h1 className="text-[98px] z-10">
           The Lake District
@@ -239,7 +248,7 @@ function App() {
       <div className="px-[80px] py-[32px] bg-night/80 flex justify-between h-[300px]">
         <div className="text-jonquil w-1/3">
           <h4 className="text-[32px] font-light">Contact us</h4>
-          <p>
+          <p className="leading-relaxed">
             The Lake District Book Festival
             <br />
             Kelleth Old Hall
