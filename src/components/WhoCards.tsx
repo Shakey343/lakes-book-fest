@@ -18,7 +18,7 @@ const team: Team = [
     role: "Festival Director",
     imgUrl: ChristopherImg,
     imgUrlAlt: "Profile image Christopher de Bellaigue Smiling",
-    webUrl: "https://www.christopherdebellaigue.com/"
+    webUrl: "https://www.christopherdebellaigue.com/",
   },
   {
     name: "The Racecourse, Cartmel",
@@ -26,7 +26,7 @@ const team: Team = [
     role: "The Location",
     imgUrl: RacecourseImg,
     imgUrlAlt: "Image of horse jumping",
-    webUrl: "https://cartmel-racecourse.co.uk/"
+    webUrl: "https://cartmel-racecourse.co.uk/",
   },
   {
     name: "Charlotte Fairbairn",
@@ -34,16 +34,27 @@ const team: Team = [
     role: "Festival Producer",
     imgUrl: CharlotteImg,
     imgUrlAlt: "Profile image of Charlotte Fairbairn with her dog - Piglet",
-    webUrl: "https://www.charlottefairbairn.co.uk/"
+    webUrl: "https://www.charlottefairbairn.co.uk/",
   },
 ];
 
 const WhoCards = () => {
   return team.map((member, i) => (
-    <a key={i} className="flex items-center flex-col gap-[30px] w-[360px] h-[432px] group" href={member.webUrl} target="_blank">
+    <a
+      key={i}
+      className="flex items-center flex-col gap-[30px] w-[360px] h-[432px] group"
+      href={member.webUrl}
+      target="_blank"
+    >
       <h3 className="text-white text-3xl">{member.name}</h3>
-      <img className="w-[300px] h-[300px] rounded-full object-cover border-2 border-jonquil group-hover:border-8 transition-all" src={member.imgUrl} alt={member.imgUrlAlt} />
-      <h4 className="text-night text-[22px] text-black-olive group-hover:text-[24px]">{member.role}</h4>
+      <img
+        className="w-[300px] h-[300px] rounded-full object-cover border-2 border-jonquil group-hover:border-8 transition-all"
+        src={member.imgUrl}
+        alt={member.imgUrlAlt}
+      />
+      <h4 className="text-night text-[22px] text-black-olive group-hover:text-[24px]">
+        {member.role}
+      </h4>
     </a>
   ));
 };
