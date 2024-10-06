@@ -23,7 +23,7 @@ const team: Team = [
   {
     name: "The Racecourse, Cartmel",
     about: "Owned by Holker Group & the Cavendish family",
-    role: "The Location",
+    role: "Festival Venue",
     imgUrl: RacecourseImg,
     imgUrlAlt: "Image of horse jumping",
     webUrl: "https://cartmel-racecourse.co.uk/",

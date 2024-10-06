@@ -7,7 +7,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply font-serif;
+    @apply font-aldelphi;
     @apply cursor-default;
   }
   h1 {
