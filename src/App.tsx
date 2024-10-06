@@ -182,7 +182,7 @@ function App() {
             <div className="flex justify-between w-full px-[176px]">
               <a
                 className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-jonquil group hover:border-8 transition-all relative"
-                href="#"
+                href="/downloadable_patron_and_sponsorship_information.pdf"
               >
                 <p className="text-[24px] group-hover:text-[22px] transition-all">
                   Become a
@@ -199,7 +199,7 @@ function App() {
               </a>
               <a
                 className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-night group hover:border-8 transition-all"
-                href="#"
+                href="/downloadable_patron_and_sponsorship_information.pdf"
               >
                 <p className="text-[24px] group-hover:text-[22px] transition-all">
                   Become a
@@ -252,7 +252,7 @@ function App() {
             </div>
           </div>
           <Button
-            className="w-fit bg-jonquil text-night hover:bg-silver"
+            className="w-fit bg-jonquil text-night hover:bg-grey"
             href="mailto:festivalproducer@lakedistrictbookfestival.co.uk"
             initialWord="Questions?"
             hoverWord="Email us"
@@ -266,7 +266,7 @@ function App() {
         id="contact"
       >
         <div className="text-jonquil w-1/3">
-          <h4 className="text-[32px] font-light">Contact us</h4>
+          <h4 className="text-[32px] font-light mb-[20px]">Contact us</h4>
           <p className="leading-relaxed">
             The Lake District Book Festival
             <br />

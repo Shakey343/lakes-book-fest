@@ -29,26 +29,6 @@ const Navbar = () => {
         <div className="hidden group-hover:block group-hover:bg-fire-red rounded-full px-3 mr-3 transition-all">Contact</div>
         <div className="w-[10px] h-[10px] bg-fire-red rounded-full translate-x-[5px] group-hover:w-[20px] group-hover:h-[20px] group-hover:translate-x-[10px] transition-all"></div>
       </a>
-      {/* <a href="#who" className="group">
-        <div className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[50px] -left-1/2 -translate-x-2/4 group-hover:w-[20px] group-hover:h-[20px] group-hover:top-[45px] transition-all">
-          <p className="absolute right-10 -top-[6px] text-white hidden group-hover:block transition-all">who</p>
-        </div>
-      </a>
-      <a href="#festival">
-        <div className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[120px] -left-1/2 -translate-x-2/4 hover:w-[20px] hover:h-[20px] hover:top-[115px] transition-all"></div>
-      </a>
-      <a href="#location">
-        <div className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[190px] -left-1/2 -translate-x-2/4 hover:w-[20px] hover:h-[20px] hover:top-[185px] transition-all"></div>
-      </a>
-      <a href="#cartmel">
-        <div className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[260px] -left-1/2 -translate-x-2/4 hover:w-[20px] hover:h-[20px] hover:top-[255px] transition-all"></div>
-      </a>
-      <a href="#schools">
-        <div className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[330px] -left-1/2 -translate-x-2/4 hover:w-[20px] hover:h-[20px] hover:top-[325px] transition-all"></div>
-      </a>
-      <a href="support">
-        <div className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[400px] -left-1/2 -translate-x-2/4 hover:w-[20px] hover:h-[20px] hover:top-[395px] transition-all"></div>
-      </a> */}
     </nav>
   );
 };

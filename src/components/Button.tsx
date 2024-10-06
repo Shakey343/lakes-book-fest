@@ -24,7 +24,7 @@ const Button = ({
     <a
       className={cn(
         "cursor-pointer py-3 px-8 rounded-full shadow-md font-medium min-w-[150px] text-center",
-        "hover:bg-gradient-to-r hover:from-night/5 hover:to-night/5 hover:text-fire-red hover:ring ring-fire-red transition-all",
+        "hover:bg-gradient-to-r hover:text-jonquil hover:ring ring-jonquil transition-all",
         className
       )}
       href={href}
