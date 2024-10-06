@@ -19,9 +19,13 @@ function App() {
           Bringing the world to the Lakes
           <br /> & the Lakes to the world
         </p>
-        <Button className="mt-7 w-fit bg-jonquil text-night" href="/downloadable_patron_and_sponsorship_information.pdf" download>
-          Support Us
-        </Button>
+        <Button
+          className="mt-7 w-fit bg-jonquil text-night hover:bg-night"
+          href="mailto:festivalproducer@lakedistrictbookfestival.co.uk"
+          initialWord="Questions?"
+          hoverWord="Email us"
+          download
+        />
         <img
           src={FeatherImg}
           alt=""
@@ -30,11 +34,17 @@ function App() {
       </div>
 
       <main>
-        <div className="flex justify-evenly px-[80px] pt-[80px] pb-[120px] bg-map-grey" id="who">
+        <div
+          className="flex justify-evenly px-[80px] pt-[80px] pb-[120px] bg-map-grey"
+          id="who"
+        >
           <WhoCards />
         </div>
 
-        <div className="flex flex-col px-[80px] pt-[80px] pb-[120px] bg-silver text-night" id="festival">
+        <div
+          className="flex flex-col px-[80px] pt-[80px] pb-[120px] bg-silver text-night"
+          id="festival"
+        >
           <div className="w-fit mb-[60px] leading-none">
             <h2 className="relative text-[54px] font-light">
               The Festival
@@ -65,10 +75,13 @@ function App() {
           </div>
         </div>
 
-        <div className="px-[80px] py-[40px] h-[800px] bg-map-grey relative" id="location">
+        <div
+          className="px-[80px] py-[40px] h-[800px] bg-map-grey relative"
+          id="location"
+        >
           <div className="absolute top-0 left-0 bg-map-grey w-[470px] h-full z-10"></div>
           <div className="z-20 relative w-fit">
-            <h2 className="text-[44px] text-white font-light mb-[40px]">
+            <h2 className="text-[44px] text-white font-light mb-[60px] leading-none">
               Location &<br /> Links
             </h2>
             <div className="flex flex-col gap-[30px]">
@@ -105,7 +118,10 @@ function App() {
           />
         </div>
 
-        <div className="px-[80px] py-[40px] h-[580px] relative overflow-hidden" id="cartmel">
+        <div
+          className="px-[80px] py-[40px] h-[580px] relative overflow-hidden"
+          id="cartmel"
+        >
           <div className="flex flex-col gap-[40px]">
             <h2 className="text-[44px] font-light">About Cartmel</h2>
             <p className="quote">A thimble full of diamonds</p>
@@ -125,7 +141,10 @@ function App() {
           />
         </div>
 
-        <div className="p-[80px] pb-[120px] bg-map-grey relative flex flex-col gap-[60px]" id="schools">
+        <div
+          className="p-[80px] pb-[120px] bg-map-grey relative flex flex-col gap-[60px]"
+          id="schools"
+        >
           <h2 className="text-white font-light text-[44px]">
             The Schools Programme
           </h2>
@@ -232,13 +251,20 @@ function App() {
               </div>
             </div>
           </div>
-          <Button className="w-fit bg-jonquil text-night" href="/downloadable_patron_and_sponsorship_information.pdf" download>
-            More details
-          </Button>
+          <Button
+            className="w-fit bg-jonquil text-night hover:bg-silver"
+            href="mailto:festivalproducer@lakedistrictbookfestival.co.uk"
+            initialWord="Questions?"
+            hoverWord="Email us"
+            download
+          />
         </div>
       </main>
 
-      <div className="px-[80px] py-[32px] bg-night/80 flex justify-between h-[300px]" id="contact">
+      <div
+        className="px-[80px] py-[32px] bg-night/80 flex justify-between h-[300px]"
+        id="contact"
+      >
         <div className="text-jonquil w-1/3">
           <h4 className="text-[32px] font-light">Contact us</h4>
           <p className="leading-relaxed">
@@ -252,14 +278,27 @@ function App() {
           </p>
         </div>
         <div className="flex flex-col justify-end gap-[6px] items-center text-white w-1/3">
-          <p className="font-light text-silver">©️ 2024 The Lake District Book Festival.</p>
-          <p>Made with ❤️ by <a href="https://github.com/Shakey343" target="_blank" className="font-medium hover:text-jonquil transition-all">Jake Pople</a></p>
+          <p className="font-light text-silver">
+            ©️ 2024 The Lake District Book Festival.
+          </p>
+          <p>
+            Made with ❤️ by{" "}
+            <a
+              href="https://github.com/Shakey343"
+              target="_blank"
+              className="font-medium hover:text-jonquil transition-all"
+            >
+              Jake Pople
+            </a>
+          </p>
         </div>
         <div className="text-jonquil w-1/3 flex flex-col items-end">
           <h4 className="text-[32px] font-light">Subscribe</h4>
           <form action="#" className="flex flex-col w-[160px]">
             <input type="text" />
-            <button type="submit" className="border">subscribe</button>
+            <button type="submit" className="border">
+              subscribe
+            </button>
           </form>
         </div>
       </div>
