@@ -8,6 +8,7 @@
   }
   body {
     @apply font-serif;
+    @apply cursor-default;
   }
   h1 {
     @apply text-5xl;
@@ -19,6 +20,9 @@
   }
   h3 {
     @apply font-georgia;
+  }
+  a {
+    @apply cursor-pointer;
   }
 }
 

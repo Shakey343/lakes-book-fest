@@ -4,19 +4,12 @@ import cartmelImg from "./assets/cartmel_priory.png";
 import bookImg from "./assets/school_book.png";
 import Button from "./components/Button";
 import WhoCards from "./components/WhoCards";
+// import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div>
-      <nav className="fixed h-[420px] top-[280px] right-[40px] border border-fire-red z-40">
-        <button className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[70px] -left-[5px]"></button>
-        <button className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[159px] -left-[5px]"></button>
-        <button className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[248px] -left-[5px]"></button>
-        <button className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[337px] -left-[5px]"></button>
-        <button className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[70px] -left-[5px]"></button>
-        <button className="absolute w-[10px] h-[10px] bg-fire-red rounded-full top-[70px] -left-[5px]"></button>
-      </nav>
-
+      {/* <Navbar /> */}
       <div className="flex flex-col justify-evenly py-[160px] px-[80px] relative bg-night text-white">
         <h1 className="text-[98px] z-10">
           The Lake District
