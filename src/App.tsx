@@ -19,7 +19,7 @@ function App() {
           Bringing the world to the Lakes
           <br /> & the Lakes to the world
         </p>
-        <Button className="mt-7 w-fit bg-jonquil text-night" href="/src/assets/downloadable_patron_and_sponsorship_information.pdf" download>
+        <Button className="mt-7 w-fit bg-jonquil text-night" href="/public/downloadable_patron_and_sponsorship_information.pdf" download>
           Support Us
         </Button>
         <img
@@ -232,7 +232,7 @@ function App() {
               </div>
             </div>
           </div>
-          <Button className="w-fit bg-jonquil text-night" href="/src/assets/downloadable_patron_and_sponsorship_information.pdf" download>
+          <Button className="w-fit bg-jonquil text-night" href="/public/downloadable_patron_and_sponsorship_information.pdf" download>
             More details
           </Button>
         </div>
