@@ -37,8 +37,8 @@ export default {
         '4xl': '2rem',
       },
       cursor: {
-        'default': 'url(src/assets/feather_cursor_default.png) -60 82, default',
-        'pointer': 'url(src/assets/feather_cursor_pointer.png) -60 82, pointer',
+        'default': 'url(/src/assets/feather_cursor_default.png) -60 82, default',
+        'pointer': 'url(/src/assets/feather_cursor_pointer.png) -60 82, pointer',
       }
     }
   },
