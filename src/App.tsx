@@ -4,12 +4,12 @@ import cartmelImg from "./assets/cartmel_priory.png";
 import bookImg from "./assets/school_book.png";
 import Button from "./components/Button";
 import WhoCards from "./components/WhoCards";
-// import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="flex flex-col justify-evenly py-[160px] px-[80px] relative bg-night text-white">
         <h1 className="text-[98px] z-10">
           The Lake District
@@ -19,7 +19,7 @@ function App() {
           Bringing the world to the Lakes
           <br /> & the Lakes to the world
         </p>
-        <Button className="mt-7 w-fit bg-jonquil text-night" href="#support">
+        <Button className="mt-7 w-fit bg-jonquil text-night" href="/src/assets/downloadable_patron_and_sponsorship_information.pdf" download>
           Support Us
         </Button>
         <img
@@ -30,11 +30,11 @@ function App() {
       </div>
 
       <main>
-        <div className="flex justify-evenly px-[80px] pt-[80px] pb-[120px] bg-map-grey">
+        <div className="flex justify-evenly px-[80px] pt-[80px] pb-[120px] bg-map-grey" id="who">
           <WhoCards />
         </div>
 
-        <div className="flex flex-col px-[80px] pt-[80px] pb-[120px] bg-silver text-night">
+        <div className="flex flex-col px-[80px] pt-[80px] pb-[120px] bg-silver text-night" id="festival">
           <div className="w-fit mb-[60px] leading-none">
             <h2 className="relative text-[54px] font-light">
               The Festival
@@ -65,7 +65,7 @@ function App() {
           </div>
         </div>
 
-        <div className="px-[80px] py-[40px] h-[800px] bg-map-grey relative">
+        <div className="px-[80px] py-[40px] h-[800px] bg-map-grey relative" id="location">
           <div className="absolute top-0 left-0 bg-map-grey w-[470px] h-full z-10"></div>
           <div className="z-20 relative w-fit">
             <h2 className="text-[44px] text-white font-light mb-[40px]">
@@ -105,7 +105,7 @@ function App() {
           />
         </div>
 
-        <div className="px-[80px] py-[40px] h-[580px] relative overflow-hidden">
+        <div className="px-[80px] py-[40px] h-[580px] relative overflow-hidden" id="cartmel">
           <div className="flex flex-col gap-[40px]">
             <h2 className="text-[44px] font-light">About Cartmel</h2>
             <p className="quote">A thimble full of diamonds</p>
@@ -125,7 +125,7 @@ function App() {
           />
         </div>
 
-        <div className="p-[80px] pb-[120px] bg-map-grey relative flex flex-col gap-[60px]">
+        <div className="p-[80px] pb-[120px] bg-map-grey relative flex flex-col gap-[60px]" id="schools">
           <h2 className="text-white font-light text-[44px]">
             The Schools Programme
           </h2>
@@ -232,13 +232,13 @@ function App() {
               </div>
             </div>
           </div>
-          <Button className="w-fit bg-jonquil text-night" href="#">
+          <Button className="w-fit bg-jonquil text-night" href="/src/assets/downloadable_patron_and_sponsorship_information.pdf" download>
             More details
           </Button>
         </div>
       </main>
 
-      <div className="px-[80px] py-[32px] bg-night/80 flex justify-between h-[300px]">
+      <div className="px-[80px] py-[32px] bg-night/80 flex justify-between h-[300px]" id="contact">
         <div className="text-jonquil w-1/3">
           <h4 className="text-[32px] font-light">Contact us</h4>
           <p className="leading-relaxed">

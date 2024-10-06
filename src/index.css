@@ -21,7 +21,7 @@
   h3 {
     @apply font-georgia;
   }
-  a {
+  a, button {
     @apply cursor-pointer;
   }
 }

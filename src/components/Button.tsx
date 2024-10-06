@@ -4,11 +4,13 @@ import { ReactNode } from 'react'
 const Button = ({
   className,
   children,
-  href
+  href,
+  download
 }: {
   className: string;
   href: string;
   children: ReactNode;
+  download: boolean;
 }) => {
   return (
     <a
@@ -18,6 +20,7 @@ const Button = ({
         className
       )}
       href={href}
+      download={download}
     >
       {children}
     </a>
