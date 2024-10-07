@@ -3,7 +3,7 @@ import smallFeatherImg from "./assets/small_gold_feather.jpg";
 import mapImg from "./assets/map.png";
 import cartmelImg from "./assets/cartmel_priory.png";
 import bookImg from "./assets/school_book.png";
-import downloadImg from "./assets/download.jpg";
+import downloadImg from "./assets/download.png";
 import Button from "./components/Button";
 import WhoCards from "./components/WhoCards";
 import Navbar from "./components/Navbar";
@@ -224,7 +224,7 @@ function App() {
                   founding patron
                 </p>
                 <img
-                  className="hidden group-hover:block aboslute top-10 w-[40px]"
+                  className="hidden group-hover:block absolute bottom-2 w-[80px]"
                   src={downloadImg}
                   alt=""
                 />
@@ -236,7 +236,7 @@ function App() {
                 </div>
               </a>
               <a
-                className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-night group hover:border-8 transition-all"
+                className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-night group hover:border-8 transition-all relative"
                 href="/downloadable_patron_and_sponsorship_information.pdf"
                 download
               >
@@ -246,6 +246,11 @@ function App() {
                 <p className="font-semibold text-[48px] group-hover:text-[50px] transition-all text-center">
                   business sponsor
                 </p>
+                <img
+                  className="hidden group-hover:block absolute bottom-2 w-[80px]"
+                  src={downloadImg}
+                  alt=""
+                />
               </a>
             </div>
             <div className="flex flex-col justify-center gap-[30px] w-full">
