@@ -12,11 +12,11 @@
   }
   h1 {
     @apply text-5xl;
-    @apply font-aldelphi;
+    @apply font-adelphi;
     @apply font-black;
   }
   h2 {
-    @apply font-aldelphi;
+    @apply font-adelphi;
   }
   h3 {
     @apply font-georgia;

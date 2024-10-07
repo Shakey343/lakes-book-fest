@@ -24,7 +24,6 @@ function App() {
           href="mailto:festivalproducer@lakedistrictbookfestival.co.uk"
           initialWord="Questions?"
           hoverWord="Email us"
-          download
         />
         <img
           src={FeatherImg}
@@ -45,14 +44,14 @@ function App() {
           className="flex flex-col px-[80px] pt-[80px] pb-[120px] bg-silver text-night"
           id="festival"
         >
-          <div className="w-fit mb-[60px] leading-none">
+          <div className="mb-[60px] leading-none">
             <h2 className="relative text-[54px] font-light">
               The Festival
-              <div className="absolute right-[72.5px] top-[10.5px] w-[4px] h-[4px] rounded-full bg-fire-red"></div>
+              <div className="absolute left-[208px] top-[10.5px] w-[4px] h-[4px] rounded-full bg-fire-red"></div>
             </h2>
-            <p className="text-[30px] font-light">
+            <p className="text-[31px] font-bold font-adelphi">
               12<sup>th</sup>-14<sup>th</sup> June, 20
-              <span className="text-jonquil font-medium">26</span>
+              <span className="text-fire-red font-bold">26</span>
             </p>
           </div>
           <div className="mx-auto">
@@ -81,12 +80,12 @@ function App() {
         >
           <div className="absolute top-0 left-0 bg-map-grey w-[470px] h-full z-10"></div>
           <div className="z-20 relative w-fit">
-            <h2 className="text-[44px] text-white font-light mb-[60px] leading-none">
+            <h2 className="text-[44px] text-white font-bold mb-[60px] leading-none">
               Location &<br /> Links
             </h2>
             <div className="flex flex-col gap-[30px]">
               <div className="flex flex-col gap-[10px]">
-                <h3 className="text-[32px] font-light">
+                <h3 className="text-[32px] font-light font-adelphi">
                   Closest Train Stations
                 </h3>
                 <ul className="leading-relaxed">
@@ -96,7 +95,7 @@ function App() {
                 </ul>
               </div>
               <div className="flex flex-col gap-[10px]">
-                <h3 className="text-[32px] font-light">By Car</h3>
+                <h3 className="text-[32px] font-light font-adelphi">By Car</h3>
                 <ul className="leading-relaxed">
                   <li>M6 J36 · 15 miles</li>
                   <li>Manchester · 85 miles</li>
@@ -104,7 +103,7 @@ function App() {
                 </ul>
               </div>
               <div className="flex flex-col gap-[10px]">
-                <h3 className="text-[32px] font-light">By Train</h3>
+                <h3 className="text-[32px] font-light font-adelphi">By Train</h3>
                 <ul className="leading-relaxed">
                   <li>London-Cark · 3h45-4h15</li>
                 </ul>
@@ -177,12 +176,13 @@ function App() {
           className="bg-grey flex flex-col items-center gap-[100px] px-[80px] py-[160px]"
           id="support"
         >
-          <h2 className="text-[88px] font-light text-silver">Support us</h2>
+          <h2 className="text-[88px] font-light text-silver">Support <span className="text-fire-red font-bold">us</span></h2>
           <div className="flex flex-col gap-[80px] w-full">
             <div className="flex justify-between w-full px-[176px]">
               <a
                 className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-jonquil group hover:border-8 transition-all relative"
                 href="/downloadable_patron_and_sponsorship_information.pdf"
+                download
               >
                 <p className="text-[24px] group-hover:text-[22px] transition-all">
                   Become a
@@ -200,6 +200,7 @@ function App() {
               <a
                 className="flex flex-col items-center justify-center gap-[8px] h-[360px] w-[360px] rounded-full bg-light-grey border-2 border-night group hover:border-8 transition-all"
                 href="/downloadable_patron_and_sponsorship_information.pdf"
+                download
               >
                 <p className="text-[24px] group-hover:text-[22px] transition-all">
                   Become a
@@ -256,7 +257,6 @@ function App() {
             href="mailto:festivalproducer@lakedistrictbookfestival.co.uk"
             initialWord="Questions?"
             hoverWord="Email us"
-            download
           />
         </div>
       </main>

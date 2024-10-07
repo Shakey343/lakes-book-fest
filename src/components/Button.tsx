@@ -4,13 +4,11 @@ import { useState } from 'react'
 const Button = ({
   className,
   href,
-  download,
   initialWord,
   hoverWord
 }: {
   className: string;
   href: string;
-  download: boolean;
   initialWord: string;
   hoverWord: string;
 }) => {
@@ -28,7 +26,6 @@ const Button = ({
         className
       )}
       href={href}
-      download={download}
       onMouseOver={handleWordChange}
       onMouseLeave={handleWordChange}
     >

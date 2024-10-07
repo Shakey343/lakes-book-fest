@@ -24,7 +24,7 @@ export default {
       'light-grey': '#DDDDDD',
     },
     fontFamily: {
-      aldelphi: ['adelphi-pe-variable', 'sans-serif'],
+      adelphi: ['adelphi-pe-variable', 'sans-serif'],
       georgia: ['Georgia', 'serif'],
       serif: ['IBM Plex Serif', 'serif']
     },
