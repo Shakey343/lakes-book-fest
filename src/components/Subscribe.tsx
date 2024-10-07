@@ -10,7 +10,7 @@ const Subscribe: React.FC = () => {
 
     try {
       setStatus('Loading...');
-      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/subscribe`, { email });
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}api/subscribe`, { email });
       if (response.status === 200) {
         setStatus('Subscription successful!');
         setEmail(''); // Reset the email input
