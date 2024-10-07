@@ -2,10 +2,12 @@ import FeatherImg from "./assets/gold_feather.png";
 import mapImg from "./assets/map.png";
 import cartmelImg from "./assets/cartmel_priory.png";
 import bookImg from "./assets/school_book.png";
+import downloadImg from "./assets/download.jpg";
 import Button from "./components/Button";
 import WhoCards from "./components/WhoCards";
 import Navbar from "./components/Navbar";
 import Subscribe from "./components/Subscribe";
+import Socials from "./components/Socials";
 
 function App() {
   return (
@@ -191,6 +193,7 @@ function App() {
                 <p className="font-semibold text-[48px] group-hover:text-[50px] transition-all text-center">
                   founding patron
                 </p>
+                <img className="hidden group-hover:block aboslute top-10 w-[40px]" src={downloadImg} alt="" />
                 <div className="flex flex-col items-center justify-center gap-[10px] absolute rounded-full -left-[150px] -top-[100px] bg-jonquil h-[240px] w-[240px]">
                   <p className="text-center text-[32px] font-semibold">
                     3-year subscription
@@ -278,20 +281,23 @@ function App() {
             CA10 3UG
           </p>
         </div>
-        <div className="flex flex-col justify-end gap-[6px] items-center text-white w-1/3">
-          <p className="font-light text-silver">
-            ©️ 2024 The Lake District Book Festival.
-          </p>
-          <p>
-            Made with ❤️ by{" "}
-            <a
-              href="https://github.com/Shakey343"
-              target="_blank"
-              className="font-medium hover:text-jonquil transition-all"
-            >
-              Jake Pople
-            </a>
-          </p>
+        <div className="flex flex-col justify-between gap-[6px] items-center text-white w-1/3">
+          <Socials />
+          <div className="text-center">
+            <p className="font-light text-silver">
+              ©️ 2024 The Lake District Book Festival.
+            </p>
+            <p>
+              Made with ❤️ by{" "}
+              <a
+                href="https://github.com/Shakey343"
+                target="_blank"
+                className="font-medium hover:text-jonquil transition-all"
+                >
+                Jake Pople
+              </a>
+            </p>
+          </div>
         </div>
         <div className="text-jonquil w-1/3 flex flex-col items-end">
           <Subscribe />
