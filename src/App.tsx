@@ -1,4 +1,5 @@
 import FeatherImg from "./assets/gold_feather.png";
+import smallFeatherImg from "./assets/small_gold_feather.jpg";
 import mapImg from "./assets/map.png";
 import cartmelImg from "./assets/cartmel_priory.png";
 import bookImg from "./assets/school_book.png";
@@ -57,8 +58,33 @@ function App() {
               <span className="text-fire-red font-bold">26</span>
             </p>
           </div>
-          <div className="mx-auto">
-            <p className="text-[44px] leading-loose">
+          <div className="mx-auto ">
+            <p className="text-[44px] leading-loose relative">
+              <img
+                src={smallFeatherImg}
+                alt=""
+                className="absolute w-[100px] h-[100px] right-[32px] -top-[16px]"
+              />
+              <img
+                src={smallFeatherImg}
+                alt=""
+                className="absolute w-[100px] h-[100px] right-[238px] top-[84px]"
+              />
+              <img
+                src={smallFeatherImg}
+                alt=""
+                className="absolute w-[100px] h-[100px] right-[32px] top-[170px]"
+              />
+              <img
+                src={smallFeatherImg}
+                alt=""
+                className="absolute w-[100px] h-[100px] right-[169px] top-[262px]"
+              />
+              <img
+                src={smallFeatherImg}
+                alt=""
+                className="absolute w-[100px] h-[100px] -right-[100px] -bottom-[10px]"
+              />
               <span className="text-jonquil">Opening drinks party</span> in
               Cartmel Priory
               <br />
@@ -106,7 +132,9 @@ function App() {
                 </ul>
               </div>
               <div className="flex flex-col gap-[10px]">
-                <h3 className="text-[32px] font-light font-adelphi">By Train</h3>
+                <h3 className="text-[32px] font-light font-adelphi">
+                  By Train
+                </h3>
                 <ul className="leading-relaxed">
                   <li>London-Cark · 3h45-4h15</li>
                 </ul>
@@ -179,7 +207,9 @@ function App() {
           className="bg-grey flex flex-col items-center gap-[100px] px-[80px] py-[160px]"
           id="support"
         >
-          <h2 className="text-[88px] font-light text-silver">Support <span className="text-fire-red font-bold">us</span></h2>
+          <h2 className="text-[88px] font-light text-silver">
+            Support <span className="text-fire-red font-bold">us</span>
+          </h2>
           <div className="flex flex-col gap-[80px] w-full">
             <div className="flex justify-between w-full px-[176px]">
               <a
@@ -193,7 +223,11 @@ function App() {
                 <p className="font-semibold text-[48px] group-hover:text-[50px] transition-all text-center">
                   founding patron
                 </p>
-                <img className="hidden group-hover:block aboslute top-10 w-[40px]" src={downloadImg} alt="" />
+                <img
+                  className="hidden group-hover:block aboslute top-10 w-[40px]"
+                  src={downloadImg}
+                  alt=""
+                />
                 <div className="flex flex-col items-center justify-center gap-[10px] absolute rounded-full -left-[150px] -top-[100px] bg-jonquil h-[240px] w-[240px]">
                   <p className="text-center text-[32px] font-semibold">
                     3-year subscription
@@ -293,7 +327,7 @@ function App() {
                 href="https://github.com/Shakey343"
                 target="_blank"
                 className="font-medium hover:text-jonquil transition-all"
-                >
+              >
                 Jake Pople
               </a>
             </p>
