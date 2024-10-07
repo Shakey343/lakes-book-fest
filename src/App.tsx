@@ -85,8 +85,14 @@ function App() {
                 alt=""
                 className="absolute w-[100px] h-[100px] -right-[100px] -bottom-[10px]"
               />
-              <span className="text-jonquil">Opening drinks party</span> in
-              Cartmel Priory
+              <span className="text-jonquil">Opening drinks party</span> in{" "}
+              <a
+                href="https://cartmelpriory.org.uk/"
+                target="_blank"
+                className="hover:text-fire-red"
+              >
+                Cartmel Priory
+              </a>
               <br />
               Local, national &{" "}
               <span className="text-jonquil">world voices</span>
@@ -95,7 +101,13 @@ function App() {
               interviews & debates
               <br />
               Festival bookshop -{" "}
-              <span className="text-jonquil">Verey Books</span>
+              <a
+                href="https://vereybooks.co.uk/"
+                target="_blank"
+                className="hover:text-fire-red"
+              >
+                <span className="text-jonquil">Verey Books</span>
+              </a>
               <br />
               <span className="text-jonquil">Delicious food & drink</span> from
               across the county
