@@ -5,6 +5,7 @@ import bookImg from "./assets/school_book.png";
 import Button from "./components/Button";
 import WhoCards from "./components/WhoCards";
 import Navbar from "./components/Navbar";
+import Subscribe from "./components/Subscribe";
 
 function App() {
   return (
@@ -266,7 +267,7 @@ function App() {
         id="contact"
       >
         <div className="text-jonquil w-1/3">
-          <h4 className="text-[32px] font-light mb-[20px]">Contact us</h4>
+          <h2 className="text-[32px] font-light mb-[20px]">Contact us</h2>
           <p className="leading-relaxed">
             The Lake District Book Festival
             <br />
@@ -293,13 +294,7 @@ function App() {
           </p>
         </div>
         <div className="text-jonquil w-1/3 flex flex-col items-end">
-          <h4 className="text-[32px] font-light">Subscribe</h4>
-          <form action="#" className="flex flex-col w-[160px]">
-            <input type="text" />
-            <button type="submit" className="border">
-              subscribe
-            </button>
-          </form>
+          <Subscribe />
         </div>
       </div>
     </div>
