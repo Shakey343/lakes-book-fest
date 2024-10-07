@@ -25,7 +25,7 @@ const Subscribe: React.FC = () => {
 
   return (
     <>
-      <h2 className="text-[32px] font-light mb-[20px]">Subscribe</h2>
+      <h2 className="text-[32px] font-light mb-[20px] text-right">Subscribe to <br />our newsletter</h2>
       <form
         className="border-2 border-white bg-black/50 flex justify-between px-4 focus mb-1"
         onSubmit={handleSubscribe}
@@ -38,7 +38,7 @@ const Subscribe: React.FC = () => {
           placeholder="Enter your email"
           required
         />
-        <button type="submit">Subscribe</button>
+        <button type="submit">Sign up</button>
       </form>
       {status && <p>{status}</p>}
     </>
