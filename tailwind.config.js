@@ -48,6 +48,9 @@ export default {
       cursor: {
         'default': 'url(/src/assets/feather_cursor_default.png) 10 50, default',
         'pointer': 'url(/src/assets/feather_cursor_pointer.png) 10 50, pointer',
+      },
+      backgroundImage: {
+        'cartmel': "url('/src/assets/cartmel_priory.png')",
       }
     }
   },

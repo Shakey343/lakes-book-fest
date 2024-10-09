@@ -7,7 +7,7 @@ const SupportSection = () => {
       className="bg-grey flex flex-col items-center gap-[100px] px-[80px] py-[160px]"
       id="support"
     >
-      <h2 className="text-[88px] font-light text-silver">
+      <h2 className="text-[88px] font-light text-silver text-center">
         Support <span className="text-fire-red font-bold">us</span>
       </h2>
       <div className="flex flex-col gap-[80px] w-full">
@@ -28,8 +28,8 @@ const SupportSection = () => {
               src={downloadImg}
               alt=""
             />
-            <div className="flex flex-col items-center justify-center gap-[10px] absolute rounded-full -left-[150px] -top-[100px] bg-jonquil h-[240px] w-[240px]">
-              <p className="text-center text-[32px] font-semibold">
+            <div className="flex flex-col items-center justify-center gap-[10px] absolute rounded-full -left-[16px] -top-[80px] md:-left-[150px] md:-top-[100px] bg-jonquil h-[160px] w-[160px] md:h-[240px] md:w-[240px]">
+              <p className="text-center text-[20px] md:text-[32px] font-semibold">
                 3-year subscription
               </p>
               <p className="text-center">£1500 p.a. per couple</p>
@@ -54,37 +54,37 @@ const SupportSection = () => {
           </a>
         </div>
         <div className="flex flex-col justify-center gap-[30px] w-full">
-          <div className="flex justify-evenly px-[80px] w-full">
-            <div className="flex flex-col items-center justify-center gap-[10px]">
+          <div className="flex justify-evenly flex-col lg:flex-row flex-wrap lg:flex-nowrap lg:px-[80px] w-full gap-[30px]">
+            <div className="flex flex-col items-center justify-center lg:gap-[10px]">
               <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
                 PRIORITY
               </h3>
               <p className="text-silver text-[32px] font-light">booking</p>
             </div>
-            <div className="h-[84px] border border-silver"></div>
-            <div className="flex flex-col items-center justify-center gap-[10px]">
+            <div className="hidden lg:block h-[84px] border border-silver"></div>
+            <div className="flex flex-col items-center justify-center lg:gap-[10px]">
               <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
                 FREE
               </h3>
               <p className="text-silver text-[32px] font-light">tickets</p>
             </div>
-            <div className="h-[84px] border border-silver"></div>
-            <div className="flex flex-col items-center justify-center gap-[10px]">
+            <div className="hidden lg:block h-[84px] border border-silver"></div>
+            <div className="flex flex-col items-center justify-center lg:gap-[10px]">
               <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
                 PRIORITY
               </h3>
               <p className="text-silver text-[32px] font-light">parking</p>
             </div>
           </div>
-          <div className="flex justify-evenly px-[260px] w-full">
-            <div className="flex flex-col items-center justify-center gap-[10px]">
-              <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
+          <div className="flex justify-evenly flex-col lg:flex-row flex-wrap lg:flex-nowrap lg:px-[100px] xl:px-[260px] w-full gap-[30px]">
+            <div className="flex flex-col items-center justify-center lg:gap-[10px]">
+              <h3 className="font-bold text-[40px] tracking-tight text-black-olive text-center">
                 GREEN ROOM
               </h3>
               <p className="text-silver text-[32px] font-light">entry</p>
             </div>
-            <div className="h-[84px] border border-silver"></div>
-            <div className="flex flex-col items-center justify-center gap-[10px]">
+            <div className="hidden lg:block h-[84px] border border-silver"></div>
+            <div className="flex flex-col items-center justify-center lg:gap-[10px]">
               <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
                 CORPORATE
               </h3>

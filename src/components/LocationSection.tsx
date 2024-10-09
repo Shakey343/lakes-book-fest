@@ -4,11 +4,11 @@ import mapImg from "../assets/map.png";
 const LocationSection = () => {
   return (
     <Container
-      className="px-[80px] py-[40px] h-[800px] bg-map-grey relative"
+      className="py-[100px] sm:py-[40px] min-h-[800px] bg-map-grey relative"
       id="location"
     >
-      <div className="absolute top-0 left-0 bg-map-grey w-[470px] h-full z-10"></div>
-      <div className="z-20 relative w-fit">
+      <div className="absolute top-0 left-0 bg-map-grey sm:w-[470px] h-full z-10"></div>
+      <div className="z-20 relative w-fit bg-map-grey sm:bg-none p-8 sm:px-0 mx-auto sm:mx-0">
         <h2 className="text-[44px] text-white font-bold mb-[60px] leading-none">
           Location &<br /> Links
         </h2>
@@ -42,7 +42,7 @@ const LocationSection = () => {
       <img
         src={mapImg}
         alt="A partial map of cumbria, showing the local train stations and festival location"
-        className="absolute right-0 top-0 h-[800px] overflow-hidden object-cover object-right"
+        className="absolute right-0 top-0 min-h-[800px] h-full overflow-hidden object-cover object-right"
       />
     </Container>
   );

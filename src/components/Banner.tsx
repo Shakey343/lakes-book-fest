@@ -9,12 +9,12 @@ const Banner = () => {
         The Lake District
         <br /> Book Festival
       </h1>
-      <p className="quote my-8 leading-none text-silver z-10">
+      <p className="quote my-8 leading-none text-silver z-10 text-[28px] sm:text-[36px]">
         Bringing the world to the Lakes
         <br /> & the Lakes to the world
       </p>
       <Button
-        className="mt-7 w-fit bg-jonquil text-night hover:bg-night"
+        className="mt-7 w-fit bg-jonquil text-night hover:bg-night self-center sm:self-auto"
         href="mailto:festivalproducer@lakedistrictbookfestival.co.uk"
         initialWord="Questions?"
         hoverWord="Email us"

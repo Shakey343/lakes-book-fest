@@ -19,6 +19,7 @@ const Footer = () => {
             <br />
             CA10 3UG
           </p>
+          <p className="mt-4">festivalproducer@lakedistrictbookfestival.co.uk</p>
         </div>
         <div className="flex flex-col justify-between gap-[6px] items-center text-white lg:w-1/3 w-full lg:h-[300px] my-8 lg:mb-0">
           <Socials />
