@@ -22,7 +22,7 @@ const Banner = () => {
       <img
         src={FeatherImg}
         alt=""
-        className="absolute top-[120px] right-[100px] w-[500px]"
+        className="absolute top-[120px] right-0 lg:right-[100px] w-[300px] md:w-[400px] lg:w-[500px]"
       />
     </Container>
   );

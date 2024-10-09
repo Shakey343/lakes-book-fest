@@ -22,7 +22,7 @@ const links = [
 
 const Socials = () => {
   return (
-    <div className="w-full flex justify-evenly px-16">
+    <div className="w-full w-[600px] flex justify-evenly px-16">
       {links.map((link, i) => (
         <a href={link.link} target="_blank" key={i}>
           <FontAwesomeIcon
