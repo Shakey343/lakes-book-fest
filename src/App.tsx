@@ -1,6 +1,3 @@
-import FeatherImg from "./assets/gold_feather.png";
-import smallFeatherImg from "./assets/small_gold_feather.jpg";
-import mapImg from "./assets/map.png";
 import cartmelImg from "./assets/cartmel_priory.png";
 import bookImg from "./assets/school_book.png";
 import downloadImg from "./assets/download.png";
@@ -9,156 +6,28 @@ import WhoCards from "./components/WhoCards";
 import Navbar from "./components/Navbar";
 import Subscribe from "./components/Subscribe";
 import Socials from "./components/Socials";
+import Container from "./components/Container";
+import Banner from "./components/Banner";
+import FestivalSection from "./components/FestivalSection";
+import LocationSection from "./components/LocationSection";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col justify-evenly py-[160px] px-[80px] relative bg-night text-white">
-        <h1 className="text-[98px] z-10">
-          The Lake District
-          <br /> Book Festival
-        </h1>
-        <p className="quote my-8 leading-none text-silver z-10">
-          Bringing the world to the Lakes
-          <br /> & the Lakes to the world
-        </p>
-        <Button
-          className="mt-7 w-fit bg-jonquil text-night hover:bg-night"
-          href="mailto:festivalproducer@lakedistrictbookfestival.co.uk"
-          initialWord="Questions?"
-          hoverWord="Email us"
-        />
-        <img
-          src={FeatherImg}
-          alt=""
-          className="absolute top-[120px] right-[100px] w-[500px]"
-        />
-      </div>
-
       <main>
-        <div
-          className="flex justify-evenly px-[80px] pt-[80px] pb-[120px] bg-map-grey"
+        <Banner />
+
+        <Container
+          className="flex justify-evenly pt-[80px] pb-[120px] bg-map-grey"
           id="who"
         >
           <WhoCards />
-        </div>
+        </Container>
 
-        <div
-          className="flex flex-col px-[80px] pt-[80px] pb-[120px] bg-silver text-night"
-          id="festival"
-        >
-          <div className="mb-[60px] leading-none">
-            <h2 className="relative text-[54px] font-light">
-              The Festival
-              <div className="absolute left-[208px] top-[10.5px] w-[4px] h-[4px] rounded-full bg-fire-red"></div>
-            </h2>
-            <p className="text-[31px] font-bold font-adelphi">
-              12<sup>th</sup>-14<sup>th</sup> June, 20
-              <span className="text-fire-red font-bold">26</span>
-            </p>
-          </div>
-          <div className="mx-auto ">
-            <p className="text-[44px] leading-loose relative">
-              <img
-                src={smallFeatherImg}
-                alt=""
-                className="absolute w-[100px] h-[100px] right-[32px] -top-[16px]"
-              />
-              <img
-                src={smallFeatherImg}
-                alt=""
-                className="absolute w-[100px] h-[100px] right-[238px] top-[84px]"
-              />
-              <img
-                src={smallFeatherImg}
-                alt=""
-                className="absolute w-[100px] h-[100px] right-[32px] top-[170px]"
-              />
-              <img
-                src={smallFeatherImg}
-                alt=""
-                className="absolute w-[100px] h-[100px] right-[169px] top-[262px]"
-              />
-              <img
-                src={smallFeatherImg}
-                alt=""
-                className="absolute w-[100px] h-[100px] -right-[100px] -bottom-[10px]"
-              />
-              <span className="text-jonquil">Opening drinks party</span> in{" "}
-              <a
-                href="https://cartmelpriory.org.uk/"
-                target="_blank"
-                className="hover:text-fire-red"
-              >
-                Cartmel Priory
-              </a>
-              <br />
-              Local, national &{" "}
-              <span className="text-jonquil">world voices</span>
-              <br />
-              <span className="text-jonquil">High-level</span> panels,
-              interviews & debates
-              <br />
-              Festival bookshop -{" "}
-              <a
-                href="https://vereybooks.co.uk/"
-                target="_blank"
-                className="hover:text-fire-red"
-              >
-                <span className="text-jonquil">Verey Books</span>
-              </a>
-              <br />
-              <span className="text-jonquil">Delicious food & drink</span> from
-              across the county
-            </p>
-          </div>
-        </div>
+        <FestivalSection />
 
-        <div
-          className="px-[80px] py-[40px] h-[800px] bg-map-grey relative"
-          id="location"
-        >
-          <div className="absolute top-0 left-0 bg-map-grey w-[470px] h-full z-10"></div>
-          <div className="z-20 relative w-fit">
-            <h2 className="text-[44px] text-white font-bold mb-[60px] leading-none">
-              Location &<br /> Links
-            </h2>
-            <div className="flex flex-col gap-[30px]">
-              <div className="flex flex-col gap-[10px]">
-                <h3 className="text-[32px] font-light font-adelphi">
-                  Closest Train Stations
-                </h3>
-                <ul className="leading-relaxed">
-                  <li>Cark-in-Cartmel · 5 minutes drive</li>
-                  <li>Oxenholme · 30 minutes</li>
-                  <li>Lancaster · 40 minutes</li>
-                </ul>
-              </div>
-              <div className="flex flex-col gap-[10px]">
-                <h3 className="text-[32px] font-light font-adelphi">By Car</h3>
-                <ul className="leading-relaxed">
-                  <li>M6 J36 · 15 miles</li>
-                  <li>Manchester · 85 miles</li>
-                  <li>London · 280 miles</li>
-                </ul>
-              </div>
-              <div className="flex flex-col gap-[10px]">
-                <h3 className="text-[32px] font-light font-adelphi">
-                  By Train
-                </h3>
-                <ul className="leading-relaxed">
-                  <li>London-Cark · 3h45-4h15</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <img
-            src={mapImg}
-            alt="A partial map of cumbria, showing the local train stations and festival location"
-            className="absolute right-0 top-0 h-[800px] overflow-hidden object-cover object-right"
-          />
-        </div>
+        <LocationSection />
 
         <div
           className="px-[80px] py-[40px] h-[580px] relative overflow-hidden"
@@ -216,7 +85,7 @@ function App() {
         </div>
 
         <div
-          className="bg-grey flex flex-col items-center gap-[100px] px-[80px] py-[160px]"
+          className="hidden bg-grey flex flex-col items-center gap-[100px] px-[80px] py-[160px]"
           id="support"
         >
           <h2 className="text-[88px] font-light text-silver">
