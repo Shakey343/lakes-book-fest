@@ -46,7 +46,7 @@ const WhoCards = () => {
       href={member.webUrl}
       target="_blank"
     >
-      <h3 className="text-white text-3xl text-center">{member.name}</h3>
+      <h3 className="text-night text-3xl text-center">{member.name}</h3>
       <img
         className="w-[300px] h-[300px] rounded-full object-cover border-2 border-jonquil group-hover:border-8 transition-all"
         src={member.imgUrl}
