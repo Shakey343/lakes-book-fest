@@ -35,7 +35,7 @@ function App() {
         <SupportSection />
 
         <Container className="pt-[80px] pb-[120px] bg-map-grey" id="otherWho">
-          <h2 className="text-[44px] font-light text-center sm:text-left">Advisory Panel</h2>
+          <h2 className="text-[44px] font-light text-center sm:text-left pb-10">Advisory Panel</h2>
           <div className="flex flex-wrap justify-evenly gap-[100px] lg:mr-10">
             <OtherWhoCards />
           </div>

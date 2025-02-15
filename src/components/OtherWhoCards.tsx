@@ -6,6 +6,7 @@ import LucyImg from "../assets/Lucy_McLaren.png";
 import MarciaImg from "../assets/Marcia_Fotheringham.jpeg";
 import MargaretImg from "../assets/Margaret_MacMillan_photo_Ander_McIntyre.jpg";
 import PeterImg from "../assets/peter-modified-small.jpg";
+import cn from "../utils/cn";
 
 
 type Team = {
@@ -70,11 +71,14 @@ const OtherWhoCards = () => {
   return team.map((member, i) => (
     <div
       key={i}
-      className="flex items-center flex-col gap-[30px] py-6 w-[200px] min-h-[432px]"
+      className="flex items-center flex-col gap-[30px] py-6 px-10 md:px-0 md:w-[200px] min-h-[432px]"
     >
       <h3 className="text-night text-2xl text-center">{member.name}</h3>
       <img
-        className="w-[200px] h-[200px] rounded-full object-cover border-4 border-jonquil"
+        className={cn(
+          "w-[200px] h-[200px] rounded-full object-cover border-4 border-jonquil",
+          member.name === "Lucy McLaren" ? "object-[-8px,-34px]" : ""
+        )}
         src={member.imgUrl}
         alt={member.imgUrlAlt}
       />
