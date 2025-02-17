@@ -1,10 +1,12 @@
 import AlImg from "../assets/al_verey.jpg";
 import AlexImg from "../assets/Alex_Scott.jpg"
+import AdamImg from "../assets/Adam_Sutherland.jpeg"
 import CharlieImg from "../assets/Charlie_Gere.jpg";
 import FionaImg from "../assets/Fiona_Candlin.jpg";
 import LucyImg from "../assets/Lucy_McLaren.png";
 import MarciaImg from "../assets/Marcia_Fotheringham.jpeg";
 import MargaretImg from "../assets/Margaret_MacMillan_photo_Ander_McIntyre.jpg";
+import MikeImg from "../assets/Mike_Gibbons.jpg"
 import PeterImg from "../assets/peter-modified-small.jpg";
 import cn from "../utils/cn";
 
@@ -18,6 +20,12 @@ type Team = {
 
 const team: Team = [
   {
+    name: "Adam Sutherland",
+    about: "Adam Sutherland has lived in the Lake District for 25 years and has been Director of Grizedale Arts for as long. This remarkable organisation has an international reach in arts, craft and difficult thinking and has a long track record of inventive polemic, caustic aesthetics and celebrated misunderstandings.",
+    imgUrl: AdamImg,
+    imgUrlAlt: "Profile image of Adam Sutherland holding an umbrella and wearing a straw hat.",
+  },
+  {
     name: "Al Verey",
     about: "Al Verey is the owner and manager of Verey Books, the Ullswater Bookshop for Curious Minds (and the Lake District Book Festival bookshop). The shop in Pooley Bridge stocks everything from Richard Osman to William Wordsworth. Pre-shop, Al was an English Teacher and before that, a guide at the Wordsworth Trust. He lives with his wife and two boys in the Lake District.",
     imgUrl: AlImg,
@@ -30,10 +38,16 @@ const team: Team = [
     imgUrlAlt: "Profile image of Charlie Gere frowning looking down to the left.",
   },
   {
+    name: "Bryan Gray",
+    about: "Bryan Gray has been a mover and shaker in the north west for many decades. His notable positions include Pro-Chancellor of Lancaster University, Chairman of the Northwest Regional Development Agency, Chairman of Peel Media Group (responsible for MediaCityUK) and director of Westmorland Ltd, which operates motorway services. He has also steered Preston North End Football Club, the National Football Museum, the Liverpool Culture Company and the National Museums Liverpool among many others. ",
+    imgUrl: "http://news.lancs.ac.uk/PublishingImages/Imported/BryanGray2004lunews.JPG",
+    imgUrlAlt: "Profile image of Bryan Gray with a suit on and smiling.",
+  },
+  {
     name: "Charlie Gere",
     about: "It may seem controversial to adopt to The Lake District Book Festival advisory panel a man who has written a book called I Hate the Lake District. On the other hand, few people think more deeply or widely about the north than Charlie Gere. He is Professor of Media Theory and History at the Lancaster Institute for the Contemporary Arts (Lancaster University).",
     imgUrl: CharlieImg,
-    imgUrlAlt: "Profile image of Charlie Gere frowning looking down to the left",
+    imgUrlAlt: "Profile image of Charlie Gere frowning looking down to the left.",
   },
   {
     name: "Fiona Candlin",
@@ -58,6 +72,12 @@ const team: Team = [
     about: "Margaret MacMillan is emeritus professor of History at the University of Toronto and emeritus professor of International History at Oxford University.  She was Provost of Trinity College, Toronto and then Warden of St Antony's College, Oxford.  She is currently a trustee of the Imperial War Museum.  In 2018 she was the BBC Reith Lecturer, and her latest book is War: How Conflict Shaped Us (2020).",
     imgUrl: MargaretImg,
     imgUrlAlt: "Profile image of Maragret MacMillan with a pearl necklace on.",
+  },
+  {
+    name: "Mike Gibbons",
+    about: "Mike has been a leader in education for over forty years: a headteacher of large secondary schools in U K and Europe; a senior civil servant responsible for innovation in schools; CEO of a group of academies and a senior adviser to academies across the country; founder governor of the National College for School Leadership and an international speaker on leadership, innovation and reform in schools. He is passionate about the vital role of literature and the arts in education.",
+    imgUrl: MikeImg,
+    imgUrlAlt: "Profile image of Mike Gibbons sitting in an armchair.",
   },
   {
     name: "Peter Straus",

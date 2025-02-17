@@ -21,7 +21,7 @@ export default {
       xl: '1440px',
     },
     colors: {
-      'jonquil': '#FAC800',
+      'jonquil': '#d9b246',
       'fire-red': '#CD171A',
       'night': '#0A0A0A',
       'black-olive': '#39413D',
