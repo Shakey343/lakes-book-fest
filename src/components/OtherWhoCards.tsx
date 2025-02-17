@@ -40,7 +40,7 @@ const team: Team = [
   },
   {
     name: "Bryan Gray",
-    about: "Bryan Gray has been a mover and shaker in the north west for many decades. His notable positions include Pro-Chancellor of Lancaster University, Chairman of the Northwest Regional Development Agency, Chairman of Peel Media Group (responsible for MediaCityUK) and director of Westmorland Ltd, which operates motorway services. He has also steered Preston North End Football Club, the National Football Museum, the Liverpool Culture Company and the National Museums Liverpool among many others. ",
+    about: "Bryan Gray’s notable positions include Pro-Chancellor of Lancaster University, Chairman of the Northwest Regional Development Agency, Chairman of Peel Media Group (responsible for MediaCityUK) and director of Westmorland Ltd, Preston North End Football Club and the Liverpool Culture Company among many others.",
     imgUrl: BryanImg,
     imgUrlAlt: "Profile image of Bryan Gray with a suit on and smiling.",
   },
