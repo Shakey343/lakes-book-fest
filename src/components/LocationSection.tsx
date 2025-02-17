@@ -28,6 +28,8 @@ const LocationSection = () => {
             <ul className="leading-relaxed">
               <li>M6 J36 · 15 miles</li>
               <li>Manchester · 85 miles</li>
+              <li>Newcastle · 120 miles</li>
+              <li>Edinburgh · 160 miles</li>
               <li>London · 280 miles</li>
             </ul>
           </div>
