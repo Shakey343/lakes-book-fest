@@ -1,6 +1,7 @@
 import AlImg from "../assets/al_verey.jpg";
 import AlexImg from "../assets/Alex_Scott.jpg"
 import AdamImg from "../assets/Adam_Sutherland.jpeg"
+import BryanImg from "../assets/Bryan_Gray.jpg"
 import CharlieImg from "../assets/Charlie_Gere.jpg";
 import FionaImg from "../assets/Fiona_Candlin.jpg";
 import LucyImg from "../assets/Lucy_McLaren.png";
@@ -40,7 +41,7 @@ const team: Team = [
   {
     name: "Bryan Gray",
     about: "Bryan Gray has been a mover and shaker in the north west for many decades. His notable positions include Pro-Chancellor of Lancaster University, Chairman of the Northwest Regional Development Agency, Chairman of Peel Media Group (responsible for MediaCityUK) and director of Westmorland Ltd, which operates motorway services. He has also steered Preston North End Football Club, the National Football Museum, the Liverpool Culture Company and the National Museums Liverpool among many others. ",
-    imgUrl: "http://news.lancs.ac.uk/PublishingImages/Imported/BryanGray2004lunews.JPG",
+    imgUrl: BryanImg,
     imgUrlAlt: "Profile image of Bryan Gray with a suit on and smiling.",
   },
   {
