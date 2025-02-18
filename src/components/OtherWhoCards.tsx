@@ -40,7 +40,7 @@ const team: Team = [
   },
   {
     name: "Bryan Gray",
-    about: "Bryan Gray’s notable positions include Pro-Chancellor of Lancaster University, Chairman of the Northwest Regional Development Agency, Chairman of Peel Media Group (responsible for MediaCityUK) and director of Westmorland Ltd, Preston North End Football Club and the Liverpool Culture Company among many others.",
+    about: "Bryan Gray's notable positions include Pro-Chancellor of Lancaster University, Chairman of the Northwest Regional Development Agency, Chairman of Peel Media Group (responsible for MediaCityUK) and director of Westmorland Ltd, Preston North End Football Club and the Liverpool Culture Company among many others.",
     imgUrl: BryanImg,
     imgUrlAlt: "Profile image of Bryan Gray with a suit on and smiling.",
   },
@@ -76,7 +76,7 @@ const team: Team = [
   },
   {
     name: "Mike Gibbons",
-    about: "Mike has been a leader in education for over forty years: a headteacher of large secondary schools in U K and Europe; a senior civil servant responsible for innovation in schools; CEO of a group of academies and a senior adviser to academies across the country; founder governor of the National College for School Leadership and an international speaker on leadership, innovation and reform in schools. He is passionate about the vital role of literature and the arts in education.",
+    about: "Mike has been a leader in education for over forty years: a headteacher of large secondary schools in UK and Europe; a senior civil servant responsible for innovation in schools; CEO of a group of academies and a senior adviser to academies across the country; founder governor of the National College for School Leadership and an international speaker on leadership, innovation and reform in schools. He is passionate about the vital role of literature and the arts in education.",
     imgUrl: MikeImg,
     imgUrlAlt: "Profile image of Mike Gibbons sitting in an armchair.",
   },
