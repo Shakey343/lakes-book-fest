@@ -55,21 +55,21 @@ const SupportSection = () => {
         </div>
         <div className="flex flex-col justify-center gap-[30px] w-full">
           <div className="flex justify-evenly flex-col lg:flex-row flex-wrap lg:flex-nowrap lg:px-[80px] w-full gap-[30px]">
-            <div className="flex flex-col items-center justify-center lg:gap-[10px]">
+            <div className="flex flex-col items-center justify-center lg:gap-[10px] w-full">
               <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
                 PRIORITY
               </h3>
               <p className="text-silver text-[32px] font-light">booking</p>
             </div>
             <div className="hidden lg:block h-[84px] border border-silver"></div>
-            <div className="flex flex-col items-center justify-center lg:gap-[10px]">
+            <div className="flex flex-col items-center justify-center lg:gap-[10px] w-full">
               <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
                 FREE
               </h3>
               <p className="text-silver text-[32px] font-light">tickets</p>
             </div>
             <div className="hidden lg:block h-[84px] border border-silver"></div>
-            <div className="flex flex-col items-center justify-center lg:gap-[10px]">
+            <div className="flex flex-col items-center justify-center lg:gap-[10px] w-full">
               <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
                 PRIORITY
               </h3>
@@ -77,14 +77,14 @@ const SupportSection = () => {
             </div>
           </div>
           <div className="flex justify-evenly flex-col lg:flex-row flex-wrap lg:flex-nowrap lg:px-[100px] xl:px-[260px] w-full gap-[30px]">
-            <div className="flex flex-col items-center justify-center lg:gap-[10px]">
+            <div className="flex flex-col items-center justify-center lg:gap-[10px] w-full">
               <h3 className="font-bold text-[40px] tracking-tight text-black-olive text-center">
                 GREEN ROOM
               </h3>
               <p className="text-silver text-[32px] font-light">entry</p>
             </div>
             <div className="hidden lg:block h-[84px] border border-silver"></div>
-            <div className="flex flex-col items-center justify-center lg:gap-[10px]">
+            <div className="flex flex-col items-center justify-center lg:gap-[10px] w-full">
               <h3 className="font-bold text-[40px] tracking-tight text-black-olive">
                 CORPORATE
               </h3>
