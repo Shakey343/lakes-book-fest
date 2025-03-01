@@ -11,6 +11,7 @@ const Subscribe: React.FC = () => {
     try {
       setStatus('Loading...');
       const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}api/subscribe`, { email });
+      console.log({response})
       if (response.status === 200) {
         setStatus('Subscription successful!');
         setEmail(''); // Reset the email input
@@ -18,8 +19,12 @@ const Subscribe: React.FC = () => {
         setStatus('Subscription failed. Please try again.');
       }
     } catch (error) {
-      console.error(error)
-      setStatus('Subscription failed. Please try again.');
+      if (error instanceof Error) {
+        const why = error.response.data.why.split(/\.\s/)[0]
+        setStatus(`Subscription failed. ${why}`);
+      } else {
+        setStatus('Subscription failed. Please try again.');
+      }
     }
   };
 
