@@ -24,6 +24,10 @@
   a, button {
     @apply cursor-pointer;
   }
+  span {
+    @apply font-adelphi;
+    @apply font-black;
+  }
 }
 
 @layer components {
