@@ -4,7 +4,7 @@ import smallFeatherImg from "../assets/small_gold_feather.jpg";
 const FestivalSection = () => {
   return (
     <Container
-      className="hidden flex flex-col pt-[80px] pb-[120px] bg-silver text-night"
+      className="hidden flex-col pt-[80px] pb-[120px] bg-silver text-night"
       id="festival"
     >
       <div className="mb-[60px] leading-none flex flex-col items-center md:items-start">

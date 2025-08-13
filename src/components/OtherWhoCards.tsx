@@ -103,7 +103,7 @@ const OtherWhoCards = () => {
         src={member.imgUrl}
         alt={member.imgUrlAlt}
       />
-      <h4 className="text-night text-[16px] text-black-olive group-hover:text-[24px] transition-all font-adelphi">
+      <h4 className="text-night text-[16px] group-hover:text-[24px] transition-all font-adelphi">
         {member.about}
       </h4>
     </div>
