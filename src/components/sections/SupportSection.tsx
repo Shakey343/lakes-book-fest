@@ -1,5 +1,5 @@
-import Button from "./Button";
-import downloadImg from "../assets/download.png";
+import Button from "../Button";
+import downloadImg from "../../assets/download.png";
 
 const SupportSection = () => {
   return (

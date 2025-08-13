@@ -1,5 +1,5 @@
-import Container from "./Container";
-import smallFeatherImg from "../assets/small_gold_feather.jpg";
+import Container from "../Container";
+import smallFeatherImg from "../../assets/small_gold_feather.jpg";
 
 const FestivalSection = () => {
   return (

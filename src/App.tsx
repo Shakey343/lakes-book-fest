@@ -1,50 +1,23 @@
-import WhoCards from "./components/WhoCards";
-import Navbar from "./components/Navbar";
-import Container from "./components/Container";
-import Banner from "./components/Banner";
-import FestivalSection from "./components/FestivalSection";
-import LocationSection from "./components/LocationSection";
-import Footer from "./components/Footer";
-import CartmelSection from "./components/CartmelSection";
-import SchoolsSection from "./components/SchoolsSection";
-import SupportSection from "./components/SupportSection";
-import OtherWhoCards from "./components/OtherWhoCards";
+import { createBrowserRouter, RouterProvider } from "react-router";
+import RootLayout from "./components/pages/RootLayout";
+import HomePage from "./components/pages/HomePage";
+import AboutPage from "./components/pages/AboutPage";
+import EventsIndex from "./components/events/EventsIndex";
 
-function App() {
-  return (
-    <>
-      <Navbar />
-      <main>
-        <Banner />
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <RootLayout />,
+    children: [
+      {path: '', element: <HomePage />},
+      {path: 'about', element: <AboutPage />},
+      {path: 'events', element: <EventsIndex />},
+    ]
+  },
+])
 
-        <Container
-          className="flex flex-wrap justify-evenly pt-[80px] pb-[120px] bg-map-grey"
-          id="who"
-        >
-          <WhoCards />
-        </Container>
-
-        <FestivalSection />
-
-        <LocationSection />
-
-        <CartmelSection />
-
-        <SchoolsSection />
-
-        <SupportSection />
-
-        <Container className="pt-[80px] pb-[120px] bg-map-grey" id="otherWho">
-          <h2 className="text-[44px] font-light text-center sm:text-left pb-10">Advisory Panel</h2>
-          <div className="flex flex-wrap justify-evenly gap-[100px] lg:mr-10">
-            <OtherWhoCards />
-          </div>
-        </Container>
-      </main>
-
-      <Footer />
-    </>
-  );
-}
+const App = () => {
+  return <RouterProvider router={router}/>;
+};
 
 export default App;

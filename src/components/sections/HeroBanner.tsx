@@ -1,8 +1,8 @@
-import Button from "./Button";
-import Container from "./Container";
-import FeatherImg from "../assets/gold_feather.png";
+import Button from "../Button";
+import Container from "../Container";
+import FeatherImg from "../../assets/gold_feather.png";
 
-const Banner = () => {
+const HeroBanner = () => {
   return (
     <Container className="flex flex-col justify-evenly py-[160px] relative bg-night text-white">
       <h1 className="text-[80px] lg:text-[98px] z-10">
@@ -28,4 +28,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default HeroBanner;

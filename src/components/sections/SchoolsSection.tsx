@@ -1,5 +1,5 @@
-import bookImg from "../assets/school_book.png";
-import Container from "./Container";
+import bookImg from "../../assets/school_book.png";
+import Container from "../Container";
 
 const SchoolsSection = () => {
   return (

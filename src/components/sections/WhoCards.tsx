@@ -1,6 +1,6 @@
-import CharlotteImg from "../assets/charlotte.jpg";
-import ChristopherImg from "../assets/christopher.jpg";
-import RacecourseImg from "../assets/racecourse.jpg";
+import CharlotteImg from "../../assets/charlotte.jpg";
+import ChristopherImg from "../../assets/christopher.jpg";
+import RacecourseImg from "../../assets/racecourse.jpg";
 
 type Team = {
   name: string;

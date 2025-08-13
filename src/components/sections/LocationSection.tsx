@@ -1,5 +1,5 @@
-import Container from "./Container";
-import mapImg from "../assets/map.png";
+import Container from "../Container";
+import mapImg from "../../assets/map.png";
 
 const LocationSection = () => {
   return (

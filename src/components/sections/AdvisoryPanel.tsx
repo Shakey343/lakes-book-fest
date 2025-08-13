@@ -1,15 +1,16 @@
-import AlImg from "../assets/al_verey.jpg";
-import AlexImg from "../assets/Alex_Scott.jpg"
-import AdamImg from "../assets/Adam_Sutherland.jpeg"
-import BryanImg from "../assets/Bryan_Gray.jpg"
-import CharlieImg from "../assets/Charlie_Gere.jpg";
-import FionaImg from "../assets/Fiona_Candlin.jpg";
-import LucyImg from "../assets/Lucy_McLaren.png";
-import MarciaImg from "../assets/Marcia_Fotheringham.jpeg";
-import MargaretImg from "../assets/Margaret_MacMillan_photo_Ander_McIntyre.jpg";
-import MikeImg from "../assets/Mike_Gibbons.jpg"
-import PeterImg from "../assets/peter-modified-small.jpg";
-import cn from "../utils/cn";
+import AlImg from "../../assets/al_verey.jpg";
+import AlexImg from "../../assets/Alex_Scott.jpg"
+import AdamImg from "../../assets/Adam_Sutherland.jpeg"
+import BryanImg from "../../assets/Bryan_Gray.jpg"
+import CharlieImg from "../../assets/Charlie_Gere.jpg";
+import FionaImg from "../../assets/Fiona_Candlin.jpg";
+import LucyImg from "../../assets/Lucy_McLaren.png";
+import MarciaImg from "../../assets/Marcia_Fotheringham.jpeg";
+import MargaretImg from "../../assets/Margaret_MacMillan_photo_Ander_McIntyre.jpg";
+import MikeImg from "../../assets/Mike_Gibbons.jpg"
+import PeterImg from "../../assets/peter-modified-small.jpg";
+import cn from "../../utils/cn";
+import Container from "../Container";
 
 
 type Team = {
@@ -88,7 +89,7 @@ const team: Team = [
   },
 ];
 
-const OtherWhoCards = () => {
+const AdvisoryCards = () => {
   return team.map((member, i) => (
     <div
       key={i}
@@ -110,4 +111,17 @@ const OtherWhoCards = () => {
   ));
 };
 
-export default OtherWhoCards;
+const AdvisoryPanel = () => {
+  return (
+    <Container className="pt-[80px] pb-[120px] bg-map-grey" id="otherWho">
+      <h2 className="text-[44px] font-light text-center sm:text-left pb-10">
+        Advisory Panel
+      </h2>
+      <div className="flex flex-wrap justify-evenly gap-[100px] lg:mr-10">
+        <AdvisoryCards />
+      </div>
+    </Container>
+  )
+}
+
+export default AdvisoryPanel;
