@@ -93,7 +93,7 @@ const AdvisoryCards = () => {
   return team.map((member, i) => (
     <div
       key={i}
-      className="flex items-center flex-col gap-[30px] py-6 px-10 md:px-0 md:w-[200px] min-h-[432px]"
+      className="flex items-center flex-col gap-[20px] py-6 px-10 md:px-0 sm:w-[450px] md:w-[250px] min-h-[432px]"
     >
       <h3 className="text-night text-2xl text-center">{member.name}</h3>
       <img
