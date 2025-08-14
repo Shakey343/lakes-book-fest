@@ -34,11 +34,11 @@ const HeroBanner = () => {
         <div className="flex self-end items-center absolute top-0 h-[80px]">
           <NavbarMenu />
         </div>
-        <h1 className="text-[80px] lg:text-[98px] z-10">
+        <h1 className="text-[80px] lg:text-[98px]">
           The Lake District
           <br /> Book Festival
         </h1>
-        <p className="quote my-8 leading-none text-silver z-10 text-[28px] sm:text-[36px]">
+        <p className="quote my-8 leading-none text-silver text-[28px] sm:text-[36px]">
           Bringing the world to the Lakes
           <br /> & the Lakes to the world
         </p>

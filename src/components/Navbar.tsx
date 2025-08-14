@@ -53,12 +53,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full h-[80px] flex flex-col justify-center bg-night z-50">
+    <nav className="fixed top-0 w-full h-[80px] flex flex-col justify-center bg-night z-30">
       <Container className="flex justify-between items-center relative">
-        <NavLink to={"/"} className="py-2" onClick={scrollToTop}>
+        <NavLink to={"/"} className="py-2 z-10" onClick={scrollToTop}>
           <div className="flex gap-2">
             <img src={FeatherImg} alt="" className="w-[50px]" />
-            <span className="z-10 text-white">
+            <span className="text-white">
               The Lake District
               <br /> Book Festival
             </span>

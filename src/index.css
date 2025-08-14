@@ -42,3 +42,8 @@
     font-weight: 200;
   }
 }
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
