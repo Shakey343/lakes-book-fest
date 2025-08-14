@@ -19,8 +19,8 @@ const Subscribe: React.FC = () => {
         setStatus('Subscription failed. Please try again.');
       }
     } catch (error) {
-      if (error instanceof Error) {
-        const why = error.response.data.why.split(/\.\s/)[0]
+      if (axios.isAxiosError(error)) {
+        const why = error.response?.data?.why?.split(/\.\s/)[0] ?? 'Unknown error';
         setStatus(`Subscription failed. ${why}`);
       } else {
         setStatus('Subscription failed. Please try again.');
