@@ -43,10 +43,19 @@ import FeatherImg from "../assets/gold_feather.png";
 import NavbarMenu from "./NavbarMenu";
 
 const Navbar = () => {
+  const scrollToTop = () => {
+    // console.log("to the top!");
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <nav className="fixed top-0 w-full h-[80px] flex flex-col justify-center bg-night z-50">
       <Container className="flex justify-between items-center relative">
-        <NavLink to={"/"} className="py-2">
+        <NavLink to={"/"} className="py-2" onClick={scrollToTop}>
           <div className="flex gap-2">
             <img src={FeatherImg} alt="" className="w-[50px]" />
             <span className="z-10 text-white">
@@ -55,7 +64,7 @@ const Navbar = () => {
             </span>
           </div>
         </NavLink>
-        <NavbarMenu />
+        <NavbarMenu scrollToTop={scrollToTop} />
       </Container>
     </nav>
   );

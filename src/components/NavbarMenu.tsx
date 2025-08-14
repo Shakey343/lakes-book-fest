@@ -1,10 +1,15 @@
 import { NavLink } from "react-router";
 
-const NavbarMenu = () => {
+interface NavbarMenuProps {
+  scrollToTop?: () => void;
+}
+
+const NavbarMenu: React.FC<NavbarMenuProps> = ({ scrollToTop }) => {
   return (
     <div className="flex gap-8">
       <NavLink
         to={"/about"}
+        onClick={scrollToTop}
         className={({ isActive }) =>
           isActive
             ? "text-fire-red py-2 border-b-2 border-fire-red"
@@ -15,6 +20,7 @@ const NavbarMenu = () => {
       </NavLink>
       <NavLink
         to={"/events"}
+        onClick={scrollToTop}
         className={({ isActive }) =>
           isActive
             ? "text-fire-red py-2 border-b-2 border-fire-red"
@@ -25,6 +31,7 @@ const NavbarMenu = () => {
       </NavLink>
       <NavLink
         to={"/schools"}
+        onClick={scrollToTop}
         className={({ isActive }) =>
           isActive
             ? "text-fire-red py-2 border-b-2 border-fire-red"
@@ -35,6 +42,7 @@ const NavbarMenu = () => {
       </NavLink>
       <NavLink
         to={"/support"}
+        onClick={scrollToTop}
         className={({ isActive }) =>
           isActive
             ? "text-fire-red py-2 border-b-2 border-fire-red"
