@@ -42,7 +42,7 @@ const WhoCards = () => {
   return team.map((member, i) => (
     <a
       key={i}
-      className="flex items-center flex-col gap-[30px] py-6 w-[360px] min-h-[432px] group"
+      className="flex items-center flex-col gap-[30px] py-6 w-[360px] min-h-[500px] group"
       href={member.webUrl}
       target="_blank"
     >
