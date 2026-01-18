@@ -4,7 +4,7 @@ import Container from "../Container";
 const SchoolsSection = () => {
   return (
     <Container
-      className="py-[80px] pb-[120px] bg-map-grey relative flex flex-col gap-[60px] text-center sm:text-left"
+      className="mt-[80px] py-[80px] pb-[120px] bg-map-grey relative flex flex-col gap-[60px] text-center sm:text-left"
       id="schools"
     >
       <h2 className="text-white font-light text-[44px] w-full sm:w-1/2 md:w-full">

@@ -5,12 +5,14 @@ const Button = ({
   className,
   href,
   initialWord,
-  hoverWord
+  hoverWord,
+  target
 }: {
   className: string;
-  href: string;
-  initialWord: string;
-  hoverWord: string;
+  href?: string;
+  initialWord?: string;
+  hoverWord?: string;
+  target?: string;
 }) => {
   const [content, setContent] = useState(initialWord)
 
@@ -28,6 +30,7 @@ const Button = ({
       href={href}
       onMouseOver={handleWordChange}
       onMouseLeave={handleWordChange}
+      target={target}
     >
       {content}
     </a>

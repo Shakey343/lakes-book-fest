@@ -2,7 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import RootLayout from "./components/pages/RootLayout";
 import HomePage from "./components/pages/HomePage";
 import AboutPage from "./components/pages/AboutPage";
-import EventsIndex from "./components/events/EventsIndex";
+import SchoolsSection from "./components/sections/SchoolsSection";
+import SupportSection from "./components/sections/SupportSection";
 
 const router = createBrowserRouter([
   {
@@ -11,7 +12,9 @@ const router = createBrowserRouter([
     children: [
       {path: '', element: <HomePage />},
       {path: 'about', element: <AboutPage />},
-      {path: 'events', element: <EventsIndex />},
+      {path: 'schools', element: <SchoolsSection />},
+      {path: 'support', element: <SupportSection />},
+      // {path: 'info', element: },
     ]
   },
 ])

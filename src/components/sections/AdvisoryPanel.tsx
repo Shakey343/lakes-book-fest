@@ -117,7 +117,7 @@ const AdvisoryPanel = () => {
       <h2 className="text-[44px] font-light text-center sm:text-left pb-10">
         Advisory Panel
       </h2>
-      <div className="flex flex-wrap justify-evenly gap-[100px] lg:mr-10">
+      <div className="flex flex-wrap justify-evenly gap-[40px]">
         <AdvisoryCards />
       </div>
     </Container>

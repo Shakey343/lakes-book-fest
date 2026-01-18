@@ -43,10 +43,13 @@ const HeroBanner = () => {
           <br /> & the Lakes to the world
         </p>
         <Button
+          href="https://events.lakedistrictbookfestival.co.uk/"
+          // href="https://www.tickettailor.com/all-tickets/thelakedistrictbookfestival/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true"
+          // href="events.lakedistrictbookfestival.co.uk"
+          target="_blank"
+          initialWord="Buy tickets"
+          hoverWord="Click here"
           className="mt-7 w-fit bg-jonquil text-night hover:bg-night self-center sm:self-auto"
-          href="mailto:festivalproducer@lakedistrictbookfestival.co.uk"
-          initialWord="Questions?"
-          hoverWord="Email us"
         />
         <img
           src={FeatherImg}
