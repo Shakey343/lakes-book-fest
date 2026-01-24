@@ -23,8 +23,21 @@ const SchoolsSection = () => {
           the teaching of the Humanities
         </p>
         <p>
-          Helping to address{" "}
-          <span className="text-silver">local educational deprivation</span>
+          Partner Schools for 2026-2027 are{" "}
+          <span className="text-silver">
+            <a href="https://www.cartmelprioryschool.co.uk/" className="hover:opacity-80">
+              Cartmel Priory CofE School
+            </a>
+            ,{" "}
+            <a href="https://www.dallamschool.co.uk/" className="hover:opacity-80">
+              Dallam School
+            </a>
+            , Milnthorpe &{" "}
+            <a href="https://stbernardsschool.uk/" className="hover:opacity-80">
+              St Bernard's Catholic High School
+            </a>
+            , Barrow-in-Furness
+          </span>
         </p>
       </div>
       <img
