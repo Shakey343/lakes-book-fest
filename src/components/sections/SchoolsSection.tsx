@@ -23,6 +23,10 @@ const SchoolsSection = () => {
           the teaching of the Humanities
         </p>
         <p>
+          Helping to address{" "}
+          <span className="text-silver">local educational deprivation</span>
+        </p>
+        {/* <p>
           Partner Schools for 2026-2027 are{" "}
           <span className="text-silver">
             <a href="https://www.cartmelprioryschool.co.uk/" className="hover:opacity-80">
@@ -38,7 +42,7 @@ const SchoolsSection = () => {
             </a>
             , Barrow-in-Furness
           </span>
-        </p>
+        </p> */}
       </div>
       <img
         src={bookImg}
