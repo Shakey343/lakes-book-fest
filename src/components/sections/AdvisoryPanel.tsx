@@ -136,7 +136,7 @@ const AdvisoryCards = () => {
 
 const AdvisoryPanel = () => {
   return (
-    <Container className="pt-[80px] pb-[120px] bg-map-grey" id="otherWho">
+    <Container className="pt-[80px] pb-[120px] bg-light-grey" id="otherWho">
       <h2 className="text-[44px] font-light text-center sm:text-left pb-10">
         Advisory Panel
       </h2>

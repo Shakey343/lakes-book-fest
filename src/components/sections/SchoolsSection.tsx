@@ -10,7 +10,7 @@ const SchoolsSection = () => {
       <h2 className="text-white font-light text-[44px] w-full sm:w-1/2 md:w-full">
         The Schools Programme
       </h2>
-      <div className="md:text-[20px] lg:text-[28px] leading-loose tracking-wide w-full lg:w-2/3 xl:w-full">
+      <div className="md:text-[20px] lg:text-[28px] leading-loose tracking-wide w-full lg:w-2/3">
         <p>
           <span className="text-silver">Bringing authors to schools</span> in
           Cartmel & surrounding area
