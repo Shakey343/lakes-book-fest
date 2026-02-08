@@ -1,1 +1,31 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/button.tsx","./src/components/container.tsx","./src/components/footer.tsx","./src/components/navbar.tsx","./src/components/navbarmenu.tsx","./src/components/socials.tsx","./src/components/subscribe.tsx","./src/components/events/eventcard.tsx","./src/components/events/eventsindex.tsx","./src/components/events/eventsshow.tsx","./src/components/pages/aboutpage.tsx","./src/components/pages/homepage.tsx","./src/components/pages/rootlayout.tsx","./src/components/sections/advisorypanel.tsx","./src/components/sections/cartmelsection.tsx","./src/components/sections/festivalsection.tsx","./src/components/sections/herobanner.tsx","./src/components/sections/locationsection.tsx","./src/components/sections/schoolssection.tsx","./src/components/sections/supportsection.tsx","./src/components/sections/whocards.tsx","./src/utils/cn.ts","./src/utils/strip.ts"],"version":"5.7.3"}
+{
+  "root": [
+    "./src/app.tsx",
+    "./src/main.tsx",
+    "./src/vite-env.d.ts",
+    "./src/components/button.tsx",
+    "./src/components/container.tsx",
+    "./src/components/footer.tsx",
+    "./src/components/navbar.tsx",
+    "./src/components/navbarmenu.tsx",
+    "./src/components/socials.tsx",
+    "./src/components/subscribe.tsx",
+    "./src/components/events/eventcard.tsx",
+    "./src/components/events/eventsindex.tsx",
+    "./src/components/events/eventsshow.tsx",
+    "./src/components/pages/aboutpage.tsx",
+    "./src/components/pages/homepage.tsx",
+    "./src/components/pages/rootlayout.tsx",
+    "./src/components/sections/advisorypanel.tsx",
+    "./src/components/sections/cartmelsection.tsx",
+    "./src/components/sections/festivalsection.tsx",
+    "./src/components/sections/herobanner.tsx",
+    "./src/components/sections/locationsection.tsx",
+    "./src/components/sections/schoolssection.tsx",
+    "./src/components/sections/supportsection.tsx",
+    "./src/components/sections/whocards.tsx",
+    "./src/utils/cn.ts",
+    "./src/utils/strip.ts"
+  ],
+  "version": "5.7.3"
+}

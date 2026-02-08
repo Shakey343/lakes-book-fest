@@ -21,7 +21,19 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
   return (
     <>
       <NavLink
-        to="/about"
+        to="/"
+        onClick={scrollAndCloseMenu}
+        className={({ isActive }) =>
+          isActive
+            ? "text-2xl md:text-base block md:hidden text-fire-red py-2 border-b-2 border-fire-red"
+            : "text-2xl md:text-base block md:hidden text-white py-2 hover:text-fire-red/80"
+        }
+      >
+        Home
+      </NavLink>
+
+      <NavLink
+        to="/guide"
         onClick={scrollAndCloseMenu}
         className={({ isActive }) =>
           isActive
@@ -29,7 +41,7 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
             : "text-2xl md:text-base text-white py-2 hover:text-fire-red/80"
         }
       >
-        About
+        Local Guide
       </NavLink>
 
       <NavLink
@@ -58,6 +70,7 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
 
       <a
         href="#contact"
+        onClick={toggleMenu}
         className="text-2xl md:text-base text-white py-2 hover:text-fire-red/80"
       >
         Contact
@@ -68,7 +81,7 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
         target="_blank"
         initialWord="Buy tickets"
         hoverWord="Click here"
-        className="w-fit bg-jonquil text-night hover:bg-night self-center sm:self-auto py-2 px-6"
+        className="w-fit mt-16 md:mt-0 bg-jonquil text-night hover:bg-night self-center sm:self-auto py-2 px-6"
       />
     </>
   );
@@ -103,8 +116,8 @@ const NavbarMenu: React.FC<NavbarMenuProps> = ({ scrollToTop }) => {
       <div className="md:hidden block">
         <div
           className={classNames(
-            "tham tham-e-squeeze tham-w-6 absolute right-6 top-[25px] z-40",
-            { "tham-active": opened }
+            "tham tham-e-squeeze tham-w-6 fixed z-50 right-6 top-[32.5px]",
+            { "tham-active": opened },
           )}
           onClick={toggleMenu}
         >
@@ -115,8 +128,8 @@ const NavbarMenu: React.FC<NavbarMenuProps> = ({ scrollToTop }) => {
 
         {opened && (
           <>
-            <div className="fixed inset-0 bg-black/40 z-40" />
-            <div className="fixed right-0 top-0 w-screen h-screen bg-night z-50 px-[48px] pt-[120px] flex flex-col">
+            {/* <div className="fixed inset-0 bg-black/40 z-40" /> */}
+            <div className="fixed right-0 top-0 w-screen h-screen bg-night z-30 px-[48px] pt-[120px] flex flex-col">
               <NavbarMenuItems
                 scrollToTop={scrollToTop}
                 toggleMenu={toggleMenu}
@@ -128,10 +141,7 @@ const NavbarMenu: React.FC<NavbarMenuProps> = ({ scrollToTop }) => {
 
       {/* Desktop */}
       <div className="hidden md:flex gap-8">
-        <NavbarMenuItems
-          scrollToTop={scrollToTop}
-          toggleMenu={toggleMenu}
-        />
+        <NavbarMenuItems scrollToTop={scrollToTop} toggleMenu={toggleMenu} />
       </div>
     </>
   );

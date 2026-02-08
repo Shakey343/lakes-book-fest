@@ -1,5 +1,6 @@
 import Container from "../Container";
-import FestivalSection from "../sections/FestivalSection";
+import EventsSection from "../sections/EventsSection";
+import FoodVendorSection from "../sections/FoodVendorSection";
 import HeroBanner from "../sections/HeroBanner";
 import WhoCards from "../sections/WhoCards";
 
@@ -8,14 +9,16 @@ const HomePage = () => {
     <>
       <HeroBanner />
 
+      <EventsSection />
+
+      <FoodVendorSection />
+
       <Container
-        className="flex flex-wrap justify-evenly pt-[80px] pb-[120px] bg-map-grey"
+        className="flex flex-wrap justify-evenly py-[80px] bg-silver"
         id="who"
       >
         <WhoCards />
       </Container>
-
-      <FestivalSection />
     </>
   );
 };
