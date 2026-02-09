@@ -13,6 +13,9 @@ const Banner = () => {
         Bringing the world to the Lakes
         <br /> & the Lakes to the world
       </p>
+      <p className="my-8 leading-none text-jonquil z-10 text-[28px] sm:text-[36px]">
+        Full programme release - 8th April
+      </p>
       <Button
         className="mt-7 w-fit bg-jonquil text-night hover:bg-night self-center sm:self-auto"
         href="mailto:festivalproducer@lakedistrictbookfestival.co.uk"
