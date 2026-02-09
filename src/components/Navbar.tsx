@@ -1,46 +1,37 @@
-import { NavLink, useLocation } from "react-router";
+import { NavLink } from "react-router";
 import Container from "./Container";
 import FeatherImg from "../assets/gold_feather.png";
 import NavbarMenu from "./NavbarMenu";
-import { useEffect } from "react";
 
 const Navbar = () => {
-  // const scrollToTop = () => {
-  //   console.log(window.innerWidth)
-  //   if (window.innerWidth < 380) {
+  const scrollToTop = () => {
+    // console.log(window.innerWidth)
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  };
+
+  // function ScrollToTop() {
+  //   const { pathname } = useLocation();
+
+  //   useEffect(() => {
+  //     const isSmall = window.innerWidth < 480;
+
   //     window.scrollTo({
   //       top: 0,
-  //       left: 0,
-  //       behavior: "auto",
+  //       behavior: isSmall ? "auto" : "smooth",
   //     });
-  //   } else {
-  //     window.scrollTo({
-  //       top: 0,
-  //       left: 0,
-  //       behavior: "smooth",
-  //     });
-  //   }
-  // };
+  //   }, [pathname]);
 
-  function ScrollToTop() {
-    const { pathname } = useLocation();
-
-    useEffect(() => {
-      const isSmall = window.innerWidth < 480;
-
-      window.scrollTo({
-        top: 0,
-        behavior: isSmall ? "auto" : "smooth",
-      });
-    }, [pathname]);
-
-    return;
-  }
+  //   return;
+  // }
 
   return (
     <nav className="fixed top-0 w-full flex flex-col justify-center bg-night z-30">
       <Container className="flex justify-between h-[80px] items-center relative">
-        <NavLink to={"/"} className="py-2 z-10" onClick={ScrollToTop}>
+        <NavLink to={"/"} className="py-2 z-10" onClick={scrollToTop}>
           <div className="flex gap-2">
             <img src={FeatherImg} alt="" className="w-[50px]" />
             <span className="text-white hidden lg:block">
@@ -49,7 +40,7 @@ const Navbar = () => {
             </span>
           </div>
         </NavLink>
-        <NavbarMenu scrollToTop={ScrollToTop} />
+        <NavbarMenu scrollToTop={scrollToTop} />
       </Container>
     </nav>
   );

@@ -8,12 +8,12 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const links = [
   {
-    link: "mailto:festivalproducer@lakedistrictbookfestival.co.uk",
-    icon: faEnvelope,
-  },
-  {
     link: "https://www.instagram.com/lakedistrictbookfestival/",
     icon: faInstagram,
+  },
+  {
+    link: "mailto:festivalproducer@lakedistrictbookfestival.co.uk",
+    icon: faEnvelope,
   },
   {
     link: "https://www.facebook.com/profile.php?id=61565796031388",
