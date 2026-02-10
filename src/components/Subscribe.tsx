@@ -20,8 +20,8 @@ const Subscribe: React.FC = () => {
       }
     } catch (error) {
       if (error instanceof Error) {
-        const why = error.response.data.why.split(/\.\s/)[0]
-        setStatus(`Subscription failed. ${why}`);
+        // const why = error.response.data.why.split(/\.\s/)[0]
+        setStatus(`Subscription failed. ${error}`);
       } else {
         setStatus('Subscription failed. Please try again.');
       }
