@@ -14,7 +14,7 @@ const HomePage = () => {
       <FoodVendorSection />
 
       <Container
-        className="flex flex-wrap justify-evenly py-[80px] bg-silver"
+        className="flex flex-wrap justify-evenly bg-silver"
         id="who"
       >
         <WhoCards />

@@ -1,7 +1,7 @@
 import LocationSection from "../sections/LocationSection";
 import PlacesSection from "../sections/PlacesSection";
 
-const AboutPage = () => {
+const LocalGuidePage = () => {
   return (
     <div className="mt-[80px]">
       <LocationSection />
@@ -10,4 +10,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage;
+export default LocalGuidePage;

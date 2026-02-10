@@ -9,12 +9,12 @@ const LocationSection = () => {
     >
       <div className="absolute top-0 left-0 bg-map-grey sm:w-[470px] h-full z-10"></div>
       <div className="z-20 relative w-fit bg-map-grey sm:bg-none p-8 sm:px-0 mx-auto sm:mx-0">
-        <h2 className="text-[44px] text-white font-bold mb-[60px] leading-none">
+        <h2 className="text-[44px] font-thin mb-[60px] leading-none">
           Location &<br /> Links
         </h2>
         <div className="flex flex-col gap-[30px]">
           <div className="flex flex-col gap-[10px]">
-            <h3 className="text-[32px] font-light font-adelphi">
+            <h3 className="text-[32px] font-bold font-adelphi">
               Closest Train Stations
             </h3>
             <ul className="leading-relaxed">
@@ -24,7 +24,7 @@ const LocationSection = () => {
             </ul>
           </div>
           <div className="flex flex-col gap-[10px]">
-            <h3 className="text-[32px] font-light font-adelphi">By Car</h3>
+            <h3 className="text-[32px] font-bold font-adelphi">By Car</h3>
             <ul className="leading-relaxed">
               <li>M6 J36 · 15 miles</li>
               <li>Manchester · 85 miles</li>
@@ -34,7 +34,7 @@ const LocationSection = () => {
             </ul>
           </div>
           <div className="flex flex-col gap-[10px]">
-            <h3 className="text-[32px] font-light font-adelphi">By Train</h3>
+            <h3 className="text-[32px] font-bold font-adelphi">By Train</h3>
             <ul className="leading-relaxed">
               <li>London-Cark · 3h45-4h15</li>
             </ul>
