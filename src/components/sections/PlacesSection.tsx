@@ -65,8 +65,8 @@ const PlacesSection = () => {
   }, []);
 
   return (
-    <Container className="flex flex-wrap justify-between py-[100px] sm:pt-20 pb-32 h-fit bg-silver relative text-xl">
-      <div className="w-1/4">
+    <Container className="flex flex-wrap gap-20 justify-between py-[100px] sm:pt-20 pb-32 h-fit bg-silver relative text-xl">
+      <div className="w-full sm:w-1/4">
         <h2 className="text-3xl mb-4">Places to Stay</h2>
         {stayPlaces.map((place, i) => (
           <a href={place.url} key={place.name} className="mr-4">
@@ -81,7 +81,7 @@ const PlacesSection = () => {
           </a>
         ))}
       </div>
-      <div className="w-1/4">
+      <div className="w-full sm:w-1/4">
         <h2 className="text-3xl mb-4">Places to Eat</h2>
         {eatPlaces.map((place, i) => (
           <a href={place.url} key={place.name} className="mr-4">
@@ -96,7 +96,7 @@ const PlacesSection = () => {
           </a>
         ))}
       </div>
-      <div className="w-1/4">
+      <div className="w-full sm:w-1/4">
         <h2 className="text-3xl mb-4">Places to Visit</h2>
         {visitPlaces.map((place, i) => (
           <a href={place.url} key={place.name} className="mr-4">

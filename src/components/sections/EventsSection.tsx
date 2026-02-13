@@ -62,7 +62,7 @@ const EventsSection = () => {
         <h2 className="font-medium text-6xl">Festival Programme</h2>
         <hr className="w-1/2 mx-auto" />
       </div>
-      <div className="flex justify-center flex-wrap gap-4">
+      <div className="flex justify-center flex-wrap gap-4 w-full">
         {events.map((event) => (
           <EventCard event={event} key={event.id} />
         ))}

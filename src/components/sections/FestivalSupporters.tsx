@@ -48,7 +48,7 @@ const FestivalSupporters = () => {
             Hohler, Levantine Heritage Foundation, Esme Lowe, Charles & Juno
             Lowther, Jim & Vanessa Lowther, Fiona Murphy, Adam Naylor, Suzanne
             Press, Nick Ratcliffe, Matt & Maryse Reed, John Martin Robinson,
-            Aeneas Reay, Alex & Sam Scott, David Verey, Rupert Watson and one or
+            Aeneas Reay, Alex & Sam Scott, David Verey, Rupert Watson, Mark Williams and one or
             two others who wish to remain anonymous
           </p>
         </div>
