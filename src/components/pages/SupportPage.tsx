@@ -1,4 +1,5 @@
 import AdvisoryPanel from "../sections/AdvisoryPanel";
+import PatronSection from "../sections/PatronSection";
 import SupportSection from "../sections/SupportSection";
 
 const SupportPage = () => {
@@ -6,6 +7,7 @@ const SupportPage = () => {
     <>
       <SupportSection />
       <AdvisoryPanel />
+      <PatronSection />
     </>
   );
 };
