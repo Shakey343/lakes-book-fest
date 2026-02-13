@@ -84,14 +84,14 @@ const Footer = () => {
         <Subscribe />
         <div className="w-50 flex mt-16 lg:mb-4 lg:mt-12 gap-6 items-center justify-center lg:justify-start">
           <a
-            href="https://www.stmaryshospice.org.uk/"
+            href="https://www.dstrust.org.uk/"
             className="my-auto"
             target="_blank"
           >
             <img src={dstLogo} alt="" className="w-[100px] object-contain" />
           </a>
           <a
-            href="https://www.politicaltours.com/"
+            href="https://www.hadfieldtrust.org.uk/"
             className="my-auto"
             target="_blank"
           >
@@ -101,7 +101,7 @@ const Footer = () => {
               className="w-[100px] object-contain"
             />
           </a>
-          <a href="https://akf.org/" className="my-auto" target="_blank">
+          <a href="https://www.cartmel.org/" className="my-auto" target="_blank">
             <img src={cvsLogo} alt="" className="w-[100px] object-contain" />
           </a>
         </div>
