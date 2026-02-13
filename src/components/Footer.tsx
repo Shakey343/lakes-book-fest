@@ -4,6 +4,9 @@ import Subscribe from "./Subscribe";
 import politicalToursLogo from "../assets/Sponsor_political_tours_logo_2024.png";
 import agaKhanLogo from "../assets/Sponsor_AgaKhanFoundation_Logo.jpg";
 import stMarysLogo from "../assets/St_Marys_Hospice_Logo_White.png";
+import dstLogo from "../assets/dst-logo.svg";
+import cvsLogo from "../assets/CVS_logo.png";
+import hadfieldTrustLogo from "../assets/BW_hadfieldtrustlogo.jpg";
 
 const Footer = () => {
   return (
@@ -11,19 +14,23 @@ const Footer = () => {
       className="py-[32px] bg-night/80 flex flex-col lg:flex-row justify-between"
       id="contact"
     >
-      <div className="text-jonquil lg:w-1/3 w-full text-center lg:text-left my-8">
-        <h2 className="text-[32px] font-light mb-[20px]">Contact us</h2>
-        <p className="leading-relaxed">
-          The Lake District Book Festival
-          <br />
-          Kelleth Old Hall
-          <br />
-          Penrith
-          <br />
-          CA10 3UG
-        </p>
-        <p className="mt-4">festivalproducer@lakedistrictbookfestival.co.uk</p>
-        <div className="w-50 flex mt-12 gap-6 justify-center lg:justify-start">
+      <div className="flex flex-col-reverse lg:block text-jonquil lg:w-1/3 w-full text-center lg:text-left my-8">
+        <div>
+          <h2 className="text-[32px] font-light mb-5">Contact us</h2>
+          <p className="leading-relaxed">
+            The Lake District Book Festival
+            <br />
+            Kelleth Old Hall
+            <br />
+            Penrith
+            <br />
+            CA10 3UG
+          </p>
+          <p className="mt-4">
+            festivalproducer@lakedistrictbookfestival.co.uk
+          </p>
+        </div>
+        <div className="w-50 flex mb-16 lg:mb-0 lg:mt-12 gap-6 justify-center lg:justify-start">
           <a
             href="https://www.stmaryshospice.org.uk/"
             className="h-full my-auto"
@@ -73,8 +80,31 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="text-jonquil lg:w-1/3 w-full flex flex-col items-center lg:items-end order-first lg:order-none my-8">
+      <div className="text-jonquil lg:w-1/3 w-full flex flex-col justify-between items-center lg:items-end order-first lg:order-none mt-8 lg:my-8">
         <Subscribe />
+        <div className="w-50 flex mt-16 lg:mb-4 lg:mt-12 gap-6 items-center justify-center lg:justify-start">
+          <a
+            href="https://www.stmaryshospice.org.uk/"
+            className="my-auto"
+            target="_blank"
+          >
+            <img src={dstLogo} alt="" className="w-[100px] object-contain" />
+          </a>
+          <a
+            href="https://www.politicaltours.com/"
+            className="my-auto"
+            target="_blank"
+          >
+            <img
+              src={hadfieldTrustLogo}
+              alt=""
+              className="w-[100px] object-contain"
+            />
+          </a>
+          <a href="https://akf.org/" className="my-auto" target="_blank">
+            <img src={cvsLogo} alt="" className="w-[100px] object-contain" />
+          </a>
+        </div>
       </div>
     </Container>
   );

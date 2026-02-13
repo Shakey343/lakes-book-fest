@@ -29,7 +29,7 @@ const Subscribe: React.FC = () => {
   };
 
   return (
-    <>
+    <div>
       <h2 className="text-[32px] font-light mb-[20px] text-center lg:text-right max-w-[400px] lg:max-w-[380px]">Subscribe to our newsletter</h2>
       <form
         className="border-2 border-white bg-black/50 flex justify-between px-4 focus mb-1"
@@ -46,7 +46,7 @@ const Subscribe: React.FC = () => {
         <button type="submit" className='w-[80px] hover:text-jonquil/70'>Sign up</button>
       </form>
       {status && <p>{status}</p>}
-    </>
+    </div>
   );
 };
 
