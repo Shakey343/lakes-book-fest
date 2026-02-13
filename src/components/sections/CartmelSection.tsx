@@ -1,5 +1,5 @@
-import cartmelImg from "../assets/cartmel_priory.png";
-import Container from "./Container";
+import cartmelImg from "../../assets/cartmel_priory.png";
+import Container from "../Container";
 
 const CartmelSection = () => {
   return (

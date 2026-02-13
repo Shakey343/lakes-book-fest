@@ -24,6 +24,10 @@
   a, button {
     @apply cursor-pointer;
   }
+  span {
+    @apply font-adelphi;
+    @apply font-black;
+  }
 }
 
 @layer components {
@@ -37,4 +41,9 @@
     font-style: italic;
     font-weight: 200;
   }
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
