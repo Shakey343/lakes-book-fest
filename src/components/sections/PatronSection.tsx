@@ -1,14 +1,14 @@
 import Container from "../Container";
 
 const patronsList = [
-  "Leo Amery",
+  "Leo and Claudine Amery",
   "Margherita Castellani",
   "Francesco Ceccato",
   "Christina Chaplin",
   "Ivor Christie",
   "Mark Davies",
   "Eric de Bellaigue",
-  "Nika de Bellaigue",
+  "Nike de Bellaigue",
   "Sheila de Bellaigue",
   "Deborah & Gez Done",
   "Arabella Duffield",
@@ -49,7 +49,7 @@ const PatronSection = () => {
               {i !== patronsList.length - 1 && ","}
             </span>
           ))}
-          <span>and one or two others who wish to remain anonymous</span>
+          <span>and others who wish to remain anonymous</span>
         </p>
       </div>
     </Container>
