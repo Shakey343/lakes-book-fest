@@ -34,7 +34,7 @@ const Navbar = () => {
         <NavLink to={"/"} className="py-2 z-10" onClick={scrollToTop}>
           <div className="flex gap-2">
             <img src={FeatherImg} alt="" className="w-[50px]" />
-            <span className="text-white hidden lg:block">
+            <span className="text-white md:hidden lg:block">
               The Lake District
               <br /> Book Festival
             </span>

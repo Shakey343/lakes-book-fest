@@ -25,8 +25,8 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
         onClick={scrollAndCloseMenu}
         className={({ isActive }) =>
           isActive
-            ? "text-2xl md:text-base block md:hidden text-fire-red py-2 border-b-2 border-fire-red"
-            : "text-2xl md:text-base block md:hidden text-white py-2 hover:text-fire-red/80"
+            ? "text-2xl md:text-sm xl:text-base block md:hidden text-fire-red py-2 border-b-2 border-fire-red"
+            : "text-2xl md:text-sm xl:text-base block md:hidden text-white py-2 hover:text-fire-red/80"
         }
       >
         Home
@@ -37,8 +37,8 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
         onClick={scrollAndCloseMenu}
         className={({ isActive }) =>
           isActive
-            ? "text-2xl md:text-base text-fire-red py-2 border-b-2 border-fire-red"
-            : "text-2xl md:text-base text-white py-2 hover:text-fire-red/80"
+            ? "text-2xl md:text-sm xl:text-base text-fire-red py-2 border-b-2 border-fire-red"
+            : "text-2xl md:text-sm xl:text-base text-white py-2 hover:text-fire-red/80"
         }
       >
         Local Guide
@@ -49,8 +49,8 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
         onClick={scrollAndCloseMenu}
         className={({ isActive }) =>
           isActive
-            ? "text-2xl md:text-base text-fire-red py-2 border-b-2 border-fire-red"
-            : "text-2xl md:text-base text-white py-2 hover:text-fire-red/80"
+            ? "text-2xl md:text-sm xl:text-base text-fire-red py-2 border-b-2 border-fire-red"
+            : "text-2xl md:text-sm xl:text-base text-white py-2 hover:text-fire-red/80"
         }
       >
         Schools Programme
@@ -61,8 +61,8 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
         onClick={scrollAndCloseMenu}
         className={({ isActive }) =>
           isActive
-            ? "text-2xl md:text-base text-fire-red py-2 border-b-2 border-fire-red"
-            : "text-2xl md:text-base text-white py-2 hover:text-fire-red/80"
+            ? "text-2xl md:text-sm xl:text-base text-fire-red py-2 border-b-2 border-fire-red"
+            : "text-2xl md:text-sm xl:text-base text-white py-2 hover:text-fire-red/80"
         }
       >
         Support Us
@@ -71,7 +71,7 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
       <a
         href="#contact"
         onClick={toggleMenu}
-        className="text-2xl md:text-base text-white py-2 hover:text-fire-red/80"
+        className="text-2xl md:text-sm xl:text-base text-white py-2 hover:text-fire-red/80"
       >
         Contact
       </a>
@@ -81,7 +81,7 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
         target="_blank"
         initialWord="Buy tickets"
         hoverWord="Click here"
-        className="w-fit mt-16 md:mt-0 bg-jonquil text-night hover:bg-night self-center sm:self-auto py-2 px-6"
+        className="w-fit mt-16 md:mt-0 bg-jonquil md:text-sm xl:text-base text-night hover:bg-night self-center sm:self-auto py-2 px-6"
       />
     </>
   );
