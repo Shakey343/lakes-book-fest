@@ -1,40 +1,20 @@
+import { useEffect, useState } from "react";
 import Container from "../Container";
-
-const patronsList = [
-  "Leo & Claudine Amery",
-  "Margherita Castellani",
-  "Francesco Ceccato",
-  "Christina Chaplin",
-  "Ivor Christie",
-  "Mark Davies",
-  "Eric & Nike de Bellaigue",
-  "Sheila de Bellaigue",
-  "Deborah & Gez Done",
-  "Arabella Duffield",
-  "Julia & Gareth Earl",
-  "Max & Caroline Egremont",
-  "Richard & Judith Greer",
-  "Helen Holland",
-  "Philip Howard",
-  "Adrian Hohler",
-  "Levantine Heritage Foundation",
-  "Esme Lowe",
-  "Charles & Juno Lowther",
-  "Jim & Vanessa Lowther",
-  "Fiona Murphy",
-  "Adam Naylor",
-  "Suzanne Press",
-  "Nick Ratcliffe",
-  "Matt Reed & Maryse Renier",
-  "John Martin Robinson",
-  "Aeneas Reay",
-  "Alex & Sam Scott",
-  "David Verey",
-  "Rupert Watson",
-  "Mark Williams",
-];
+import axios from "axios";
+import parseCSV from "../../utils/csv/parseCSV";
+import type { CSVRow } from "../../types/CSVtypes";
 
 const PatronSection = () => {
+  const [patrons, setPatrons] = useState<CSVRow[]>([]);
+
+  useEffect(() => {
+    const getPatrons = async () => {
+      const response = await axios.get(import.meta.env.VITE_GSHEET_PATRONS);
+      setPatrons(parseCSV(response.data));
+    };
+    getPatrons();
+  }, []);
+
   return (
     <Container className="pt-[80px] pb-[120px] bg-map-grey">
       <h2 className="text-[44px] font-light text-center sm:text-left pb-10">
@@ -42,10 +22,10 @@ const PatronSection = () => {
       </h2>
       <div className="flex flex-wrap justify-evenly gap-[40px]">
         <p className="flex flex-wrap gap-2">
-          {patronsList.map((patron, i) => (
+          {patrons.map((patron, i) => (
             <span className="text-night">
-              {patron}
-              {i !== patronsList.length - 1 && ","}
+              {patron.name}
+              {i !== patrons.length - 1 && ","}
             </span>
           ))}
           <span>and others who wish to remain anonymous</span>
