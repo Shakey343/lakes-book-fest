@@ -41,7 +41,7 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
             : "text-2xl md:text-sm xl:text-base text-white py-2 hover:text-fire-red/80"
         }
       >
-        Local Guide
+        Do's & Don'ts
       </NavLink>
 
       <NavLink
