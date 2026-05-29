@@ -6,6 +6,8 @@ import agaKhanLogo from "../assets/Sponsor_AgaKhanFoundation_Logo.jpg";
 import stMarysLogo from "../assets/St_Marys_Hospice_Logo_White.png";
 import dstLogo from "../assets/dst-logo.svg";
 import cvsLogo from "../assets/CVS_logo.png";
+import iranLogo from "../assets/Iran Society Logo.png";
+import reedsLogo from "../assets/Reeds-logo-with-strapline.jpg";
 import hadfieldTrustLogo from "../assets/BW_hadfieldtrustlogo.jpg";
 
 const Footer = () => {
@@ -32,12 +34,23 @@ const Footer = () => {
         </div>
         <div className="w-50 flex mb-16 lg:mb-0 lg:mt-12 gap-6 justify-center lg:justify-start">
           <a
-            href="https://www.stmaryshospice.org.uk/"
+            href="https://www.iransociety.org/"
             className="h-full my-auto"
             target="_blank"
           >
             <img
-              src={stMarysLogo}
+              src={iranLogo}
+              alt=""
+              className="w-[100px] object-contain"
+            />
+          </a>
+          <a
+            href="https://wearereeds.co.uk/"
+            className="h-full my-auto"
+            target="_blank"
+          >
+            <img
+              src={reedsLogo}
               alt=""
               className="w-[100px] object-contain"
             />
@@ -83,6 +96,17 @@ const Footer = () => {
       <div className="text-jonquil lg:w-1/3 w-full flex flex-col justify-between items-center lg:items-end order-first lg:order-none mt-8 lg:my-8">
         <Subscribe />
         <div className="w-50 flex mt-16 lg:mb-4 lg:mt-12 gap-6 items-center justify-center lg:justify-start">
+          <a
+            href="https://www.stmaryshospice.org.uk/"
+            className="h-full my-auto"
+            target="_blank"
+          >
+            <img
+              src={stMarysLogo}
+              alt=""
+              className="w-[100px] object-contain"
+            />
+          </a>
           <a
             href="https://www.dstrust.org.uk/"
             className="my-auto"
