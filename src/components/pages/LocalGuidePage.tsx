@@ -1,5 +1,5 @@
 import DosAndDontsSection from "../sections/DosAndDontsSection";
-import FAQSection from "../sections/FAQSection1";
+import FAQSection from "../sections/FAQSection";
 import LocationSection from "../sections/LocationSection";
 import PlacesSection from "../sections/PlacesSection";
 

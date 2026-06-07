@@ -1,112 +1,172 @@
+import Button from "../Button";
 import Container from "../Container";
 
 const FAQSection = () => {
   return (
-    <Container className="py-[100px] sm:pt-20 pb-32 h-fit bg-white relative">
-      <div className="mb-20">
-        {/* Looking at the way successful festivals present information, the most
-        helpful thing is often a dedicated page called something like: “First
-        Time at the Festival?” or “How the Festival Works” or “Planning Your
-        Visit” That page should answer the questions people are slightly
-        embarrassed to ask. */}
-        <h2 className="text-[44px] font-thin mb-[60px] leading-none">
+    <Container className="relative bg-stone-50 py-24 lg:py-32">
+      {/* Decorative Accent */}
+      <div className="absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-amber-700/5 blur-3xl pointer-events-none" />
+
+      {/* Hero */}
+      <section className="relative mb-24 max-w-5xl">
+        <p className="mb-4 text-xs uppercase tracking-[0.3em] text-amber-700">
+          Festival Guide
+        </p>
+
+        <h1 className="mb-8 text-5xl font-extralight leading-none tracking-tight text-neutral-900 md:text-7xl">
           Welcome to The Lake District Book Festival
-        </h2>
-        <p className="text-lg">
-          If you are a newcomer to literary festivals, herewith a few tips. You
-          are welcome to come and go as you please. You can attend one talk or
-          several. You can come on one day or on all three. You can come just
-          for the food. You can come just to buy a book. Your programme is your
-          own.
-        </p>
-        <br/>
-        <p className="text-lg">
-          For the seasoned festival-goer, a few pointers - there are talks this
-          weekend and there are also debates. Some of these you will not find
-          anywhere else - the format or the content being unique both to the
-          Lake District and to the Lake District Book Festival.
-        </p>
-        <br/>
-        <p className="text-lg">
-          Whether you are a newcomer to literary festivals or a seasoned
-          festival-goer, we very much hope that this weekend will leave you
-          stimulated, challenged, enlightened and enthused for the spoken and
-          the written word.
-        </p>
-      </div>
-      <div className="mb-20">
-        <h2 className="text-[44px] font-thin mb-[60px] leading-none">
+        </h1>
+
+        <div className="mb-10 h-px w-24 bg-amber-700" />
+
+        <div className="max-w-4xl space-y-6 text-lg leading-relaxed text-neutral-700">
+          <p>
+            If you are a newcomer to literary festivals, herewith a few tips.
+            You are welcome to come and go as you please. You can attend one
+            talk or several. You can come on one day or on all three. You can
+            come just for the food. You can come just to buy a book. Your
+            programme is your own.
+          </p>
+
+          <p>
+            For the seasoned festival-goer, a few pointers - there are talks
+            this weekend and there are also debates. Some of these you will not
+            find anywhere else - the format or content being unique both to the
+            Lake District and to the Lake District Book Festival.
+          </p>
+
+          <p>
+            Whether you are a newcomer to literary festivals or a seasoned
+            festival-goer, we very much hope that this weekend will leave you
+            stimulated, challenged, enlightened and enthused for the spoken and
+            the written word.
+          </p>
+        </div>
+      </section>
+
+      {/* How Festival Works */}
+      <section className="mb-10 border border-neutral-200 bg-white p-8 shadow-sm lg:p-12">
+        <h2 className="mb-4 text-3xl font-extralight text-neutral-900 lg:text-5xl">
           How Does The Festival Work?
         </h2>
-        <ul className="list-disc list-inside">
-          <li>Events are booked individually.</li>
-          <li>All talks last 60 minutes.</li>
-          <li>Visitors make their own schedule.</li>
-          <li>In most talks, authors will take audience questions.</li>
-          <li>Most events include book signings afterwards.</li>
+
+        <div className="mb-8 h-[2px] w-16 bg-amber-700" />
+
+        <ul className="space-y-4 text-neutral-700">
+          {[
+            "Events are booked individually.",
+            "All talks last 60 minutes.",
+            "Visitors make their own schedule.",
+            "In most talks, authors will take audience questions.",
+            "Most events include book signings afterwards.",
+          ].map((item) => (
+            <li key={item} className="flex gap-4">
+              <span className="text-amber-700">—</span>
+              <span>{item}</span>
+            </li>
+          ))}
         </ul>
-      </div>
-      <div className="mb-20">
-        <h2 className="text-[44px] font-thin mb-[60px] leading-none">
+      </section>
+
+      {/* Booking Section */}
+      <section className="mb-10 bg-neutral-900 p-8 lg:p-12">
+        <h2 className="mb-4 text-3xl font-extralight lg:text-5xl">
           How to Book Tickets
         </h2>
-        <ul className="list-disc list-inside">
+
+        <div className="mb-8 h-[2px] w-16 bg-amber-600" />
+
+        <ul className="space-y-4 text-neutral-300">
           <li>Tickets can only be booked online.</li>
-          <li>Browse the programme to find events [ADD TICKET BUTTON HERE].</li>
-          <li>Choose events (making sure they don't overlap).</li>
-          <li>Add tickets to basket.</li>
-          <li>When finished go to checkout.</li>
+          <li>Browse the programme to find events.</li>
+          <li>Choose events and avoid overlaps.</li>
+          <li>Add tickets to your basket.</li>
+          <li>Proceed to checkout.</li>
           <li>Make payment.</li>
-          <li>Receive e-ticket.</li>
-          <li>Show ticket on arrival as print-out or on your smart phone.</li>
+          <li>Receive your e-ticket.</li>
+          <li>Show your ticket on arrival.</li>
         </ul>
-      </div>
-      <div className="mb-20">
-        <h2 className="text-[44px] font-thin mb-[60px] leading-none">
+        <div className="my-8 w-full flex justify-start">
+          <Button
+            className="text-sm bg-jonquil text-night hover:text-night hover:bg-white hover:ring-night"
+            href="https://events.lakedistrictbookfestival.co.uk/"
+            hoverWord="Browse Events"
+            initialWord="Browse Events"
+          />
+        </div>
+      </section>
+
+      {/* On The Day */}
+      <section className="mb-10 border border-neutral-200 bg-white p-8 shadow-sm lg:p-12">
+        <h2 className="mb-4 text-3xl font-extralight text-neutral-900 lg:text-5xl">
           What Happens on the Day?
         </h2>
-        <ul className="list-disc list-inside">
-          <li>Arrive 15-20 minutes early.</li>
-          <li>Find your venue.</li>
-          <li>Present your ticket.</li>
-          <li>Take your seat.</li>
-          <li>Enjoy the discussion.</li>
-          <li>Ask a question if you have one.</li>
-          <li>Stay afterwards for book signing (if relevant).</li>
+
+        <div className="mb-8 h-[2px] w-16 bg-amber-700" />
+
+        <ul className="space-y-4 text-neutral-700">
+          {[
+            "Arrive 15-20 minutes early.",
+            "Find your venue.",
+            "Present your ticket.",
+            "Take your seat.",
+            "Enjoy the discussion.",
+            "Ask a question if you have one.",
+            "Stay afterwards for book signing if relevant.",
+          ].map((item) => (
+            <li key={item} className="flex gap-4">
+              <span className="text-amber-700">—</span>
+              <span>{item}</span>
+            </li>
+          ))}
         </ul>
-      </div>
-      <div className="mb-20">
-        <h2 className="text-[44px] font-thin mb-[60px] leading-none">FAQs</h2>
-        <ul>
-          <li>
-            <strong>Do I need a ticket for every event?</strong> Yes, tickets
-            are bought per event. If you would like to buy a ticket on the day,
-            either purchase one on your phone through the website, or go to the
-            welcome desk.
-          </li>
-          <li>
-            <strong>Can I buy tickets on the day?</strong> Yes, but it's
-            strongly recommended that you buy your tickets in advance.
-          </li>
-          <li>
-            <strong>Can children attend?</strong> Yes, but it may be boring for
-            them.
-          </li>
-          <li>
-            <strong>Can I photograph events?</strong> Yes, you may but no
-            selfies during book signings please.
-          </li>
-          <li>
-            <strong>What happens if an event sells out?</strong> Events are set
-            to an allocated capacity. There will always alternative talks to go
-            to on the day.
-          </li>
-          <li>
-            <strong>Are books available to buy?</strong> Of course - either at
-            the event's book signing or at the Festival Bookshop.
-          </li>
-        </ul>
-      </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="border border-neutral-200 bg-white p-8 shadow-sm lg:p-12">
+        <h2 className="mb-4 text-3xl font-extralight text-neutral-900 lg:text-5xl">
+          Frequently Asked Questions
+        </h2>
+
+        <div className="mb-10 h-[2px] w-16 bg-amber-700" />
+
+        <div className="divide-y divide-neutral-200">
+          {[
+            {
+              q: "Do I need a ticket for every event?",
+              a: "Yes. Tickets are bought individually for each event. If you would like to buy one on the day, you can buy it through the website or visit the welcome desk.",
+            },
+            {
+              q: "Can I buy tickets on the day?",
+              a: "Yes, subject to availability, although advance booking is strongly recommended.",
+            },
+            {
+              q: "Can children attend?",
+              a: "Yes, but this year it may be boring for them.",
+            },
+            {
+              q: "Can I photograph events?",
+              a: "Yes, but please be considerate and avoid selfies during book signings.",
+            },
+            {
+              q: "What happens if an event sells out?",
+              a: "Events operate with fixed capacities. There will always be alternative talks and activities available.",
+            },
+            {
+              q: "Are books available to buy?",
+              a: "Absolutely. Books can be bought during signings and from the Festival Bookshop.",
+            },
+          ].map((faq) => (
+            <div key={faq.q} className="py-6">
+              <h3 className="mb-2 text-lg font-medium text-neutral-900">
+                {faq.q}
+              </h3>
+
+              <p className="leading-relaxed text-neutral-600">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </Container>
   );
 };
