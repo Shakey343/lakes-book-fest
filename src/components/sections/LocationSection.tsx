@@ -4,7 +4,7 @@ import mapImg from "../../assets/map.png";
 const LocationSection = () => {
   return (
     <Container
-      className="py-[100px] sm:py-[40px] min-h-[800px] bg-map-grey relative"
+      className="py-[100px] sm:py-[40px] min-h-[800px] bg-map-grey relative text-white"
       id="location"
     >
       <div className="absolute top-0 left-0 bg-map-grey sm:w-[470px] h-full z-10"></div>

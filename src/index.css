@@ -41,6 +41,9 @@
     font-style: italic;
     font-weight: 200;
   }
+  .list-feather {
+    list-style-image: url("/src/assets/small_gold_feather.jpg");
+  }
 }
 
 .stop-scrolling {
