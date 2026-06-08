@@ -61,14 +61,21 @@ const DosAndDontsSection = () => {
           Festival parking is available at Cartmel Racecourse.
         </p>
 
-        <p className="text-sm md:text-lg mt-4">
-          £5 per vehicle, per day.
-        </p>
+        <p className="text-sm md:text-lg mt-4">£5 per vehicle, per day.</p>
 
         <p className="text-sm md:text-lg mt-4">
           We strongly recommend booking in advance.
         </p>
 
+        <p className="text-sm md:text-lg mt-4">
+          The festival car park is open from:
+          <br />
+          <strong>Friday 12th June</strong>: 10.30am - 6.00pm
+          <br />
+          <strong>Saturday 13th June</strong>: 9.30am - 6.00pm
+          <br />
+          <strong>Sunday 14th June</strong>: 9.30am - 6.00pm
+        </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center mt-10">
           <Button
             className="bg-jonquil text-night hover:bg-light-grey hover:text-night hover:ring-night"
@@ -116,9 +123,7 @@ const DosAndDontsSection = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h4 className="font-adelphi text-xl mb-4 text-jonquil">
-              By Taxi
-            </h4>
+            <h4 className="font-adelphi text-xl mb-4 text-jonquil">By Taxi</h4>
 
             <p className="text-sm md:text-lg leading-relaxed">
               There are plenty of taxis available at Oxenholme station.
@@ -131,9 +136,7 @@ const DosAndDontsSection = () => {
           </div>
 
           <div>
-            <h4 className="font-adelphi text-xl mb-4 text-jonquil">
-              By Car
-            </h4>
+            <h4 className="font-adelphi text-xl mb-4 text-jonquil">By Car</h4>
 
             <p className="text-sm md:text-lg leading-relaxed">
               Please avoid driving through Cartmel village where possible.
