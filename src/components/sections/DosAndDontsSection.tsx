@@ -1,4 +1,4 @@
-import Button from "../Button";
+// import Button from "../Button";
 import Container from "../Container";
 
 const DosAndDontsSection = () => {
@@ -60,7 +60,7 @@ const DosAndDontsSection = () => {
         <p className="text-sm md:text-lg leading-relaxed">
           Festival parking is available at Cartmel Racecourse.
         </p>
-
+        {/*
         <p className="text-sm md:text-lg mt-4">£5 per vehicle, per day.</p>
 
         <p className="text-sm md:text-lg mt-4">
@@ -97,7 +97,7 @@ const DosAndDontsSection = () => {
             hoverWord="Sunday Parking"
             href="https://events.lakedistrictbookfestival.co.uk/events/thelakedistrictbookfestival/2242203"
           />
-        </div>
+        </div> */}
       </section>
 
       {/* Tickets */}

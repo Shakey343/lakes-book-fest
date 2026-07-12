@@ -1,6 +1,6 @@
 import Container from "../Container";
-import EventsSection from "../sections/EventsSection";
-import FoodVendorSection from "../sections/FoodVendorSection";
+// import EventsSection from "../sections/EventsSection";
+// import FoodVendorSection from "../sections/FoodVendorSection";
 import HeroBanner from "../sections/HeroBanner";
 import WhoCards from "../sections/WhoCards";
 
@@ -9,14 +9,11 @@ const HomePage = () => {
     <>
       <HeroBanner />
 
-      <EventsSection />
+      {/* <EventsSection />
 
-      <FoodVendorSection />
+      <FoodVendorSection /> */}
 
-      <Container
-        className="flex flex-wrap justify-evenly bg-silver"
-        id="who"
-      >
+      <Container className="flex flex-wrap justify-evenly bg-silver" id="who">
         <WhoCards />
       </Container>
     </>

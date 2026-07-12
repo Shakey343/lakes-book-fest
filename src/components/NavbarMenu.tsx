@@ -56,7 +56,7 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
         Schools Programme
       </NavLink>
 
-      <NavLink
+      {/* <NavLink
         to="/support"
         onClick={scrollAndCloseMenu}
         className={({ isActive }) =>
@@ -66,7 +66,7 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
         }
       >
         Support Us
-      </NavLink>
+      </NavLink> */}
 
       <a
         href="#contact"
@@ -77,9 +77,9 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
       </a>
 
       <Button
-        href="https://events.lakedistrictbookfestival.co.uk/"
+        href="https://events.lakedistrictbookfestival.co.uk/checkout/new-session/store/71646/chk/202e?ref=store-widget&show_search_filter=true&show_date_filter=true&show_sort=true&show_event_filter=false"
         target="_blank"
-        initialWord="Buy tickets"
+        initialWord="Join Us"
         hoverWord="Click here"
         className="w-fit mt-16 md:mt-0 bg-jonquil md:text-sm xl:text-base text-night hover:bg-night self-center sm:self-auto py-2 px-6"
       />

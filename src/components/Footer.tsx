@@ -16,7 +16,7 @@ const Footer = () => {
       className="py-[32px] bg-night/80 flex flex-col lg:flex-row justify-between"
       id="contact"
     >
-      <div className="flex flex-col-reverse lg:block text-jonquil lg:w-1/3 w-full text-center lg:text-left my-8">
+      <div className="flex flex-col-reverse lg:flex-col lg:justify-between text-jonquil lg:w-1/3 w-full text-center lg:text-left my-8">
         <div>
           <h2 className="text-[32px] font-light mb-5">Contact us</h2>
           <p className="leading-relaxed">
@@ -32,10 +32,17 @@ const Footer = () => {
             festivalproducer@lakedistrictbookfestival.co.uk
           </p>
         </div>
-        <div className="w-50 flex mb-16 lg:mb-0 lg:mt-12 gap-6 justify-center lg:justify-start">
+        <div className="w-50 flex mb-16 lg:mb-4 lg:mt-12 gap-6 justify-center lg:justify-start">
+          <a href="https://akf.org/" className="h-full my-auto flex items-center" target="_blank">
+            <img
+              src={agaKhanLogo}
+              alt=""
+              className="w-[100px] object-contain"
+            />
+          </a>
           <a
             href="https://www.iransociety.org/"
-            className="h-full my-auto"
+            className="h-full my-auto flex items-center"
             target="_blank"
           >
             <img
@@ -46,7 +53,7 @@ const Footer = () => {
           </a>
           <a
             href="https://wearereeds.co.uk/"
-            className="h-full my-auto"
+            className="h-full my-auto flex items-center"
             target="_blank"
           >
             <img
@@ -55,16 +62,9 @@ const Footer = () => {
               className="w-[100px] object-contain"
             />
           </a>
-          <a href="https://akf.org/" className="h-full my-auto" target="_blank">
-            <img
-              src={agaKhanLogo}
-              alt=""
-              className="w-[100px] object-contain"
-            />
-          </a>
           <a
             href="https://www.politicaltours.com/"
-            className="h-full my-auto"
+            className="h-full my-auto flex items-center"
             target="_blank"
           >
             <img
@@ -94,7 +94,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-jonquil lg:w-1/3 w-full flex flex-col justify-between items-center lg:items-end order-first lg:order-none mt-8 lg:my-8">
-        <Subscribe />
+        <Subscribe className="text-right"/>
         <div className="w-50 flex mt-16 lg:mb-4 lg:mt-12 gap-6 items-center justify-center lg:justify-start">
           <a
             href="https://www.stmaryshospice.org.uk/"

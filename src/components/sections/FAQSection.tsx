@@ -1,4 +1,4 @@
-import Button from "../Button";
+// import Button from "../Button";
 import Container from "../Container";
 
 const FAQSection = () => {
@@ -86,14 +86,14 @@ const FAQSection = () => {
           <li>Receive your e-ticket.</li>
           <li>Show your ticket on arrival.</li>
         </ul>
-        <div className="my-8 w-full flex justify-start">
+        {/* <div className="my-8 w-full flex justify-start">
           <Button
             className="text-sm bg-jonquil text-night hover:text-night hover:bg-white hover:ring-night"
             href="https://events.lakedistrictbookfestival.co.uk/"
             hoverWord="Browse Events"
             initialWord="Browse Events"
           />
-        </div>
+        </div> */}
       </section>
 
       {/* On The Day */}

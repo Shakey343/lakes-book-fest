@@ -3,7 +3,7 @@ import RootLayout from "./components/pages/RootLayout";
 import HomePage from "./components/pages/HomePage";
 import LocalGuidePage from "./components/pages/LocalGuidePage";
 import SchoolsPage from "./components/sections/SchoolsPage";
-import SupportPage from "./components/pages/SupportPage";
+// import SupportPage from "./components/pages/SupportPage";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
       { path: "", element: <HomePage /> },
       { path: "guide", element: <LocalGuidePage /> },
       { path: "schools", element: <SchoolsPage /> },
-      { path: "support", element: <SupportPage /> },
+      // { path: "support", element: <SupportPage /> },
     ],
   },
 ]);
