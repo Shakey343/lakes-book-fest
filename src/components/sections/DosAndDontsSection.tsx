@@ -60,7 +60,7 @@ const DosAndDontsSection = () => {
         <p className="text-sm md:text-lg leading-relaxed">
           Festival parking is available at Cartmel Racecourse.
         </p>
-{/*
+        {/*
         <p className="text-sm md:text-lg mt-4">£5 per vehicle, per day.</p>
 
         <p className="text-sm md:text-lg mt-4">

@@ -38,15 +38,15 @@ const HeroBanner = () => {
           The Lake District
           <br /> Book Festival
         </h1>
-        <p className="quote my-8 leading-none text-jonquil text-[28px] sm:text-[36px]">
+        <p className="hidden sm:block quote my-8 leading-none text-jonquil text-[18px] sm:text-[24px]">
           Bringing the world to the Lakes
           <br /> & the Lakes to the world
         </p>
         <Button
-          href="https://events.lakedistrictbookfestival.co.uk/"
+          href="https://events.lakedistrictbookfestival.co.uk/checkout/new-session/store/71646/chk/202e?ref=store-widget&show_search_filter=true&show_date_filter=true&show_sort=true&show_event_filter=false"
           target="_blank"
-          initialWord="Buy tickets"
-          hoverWord="Click here"
+          initialWord="Join Us"
+          hoverWord="Buy Membership"
           className="mt-28 sm:mt-7 w-fit bg-jonquil text-night hover:bg-night self-center sm:self-auto"
         />
         <img
@@ -54,12 +54,14 @@ const HeroBanner = () => {
           alt="Lake district book festival feather"
           className="absolute top-[120px] right-0 lg:right-[60px] w-[300px] md:w-[400px] lg:w-[400px]"
         />
-        <div className="absolute left-4 bottom-56 sm:left-auto sm:right-10 sm:bottom-40 md:right-16 md:bottom-16 lg:right-28 lg:bottom-20 w-fit flex flex-col md:gap-2 text-left sm:text-right">
+        <div className="absolute left-4 bottom-48 sm:left-auto sm:right-10 sm:bottom-40 md:right-16 md:bottom-12 lg:right-28 lg:bottom-20 w-fit flex flex-col md:gap-2 text-left sm:text-right">
           <p className="text-lg md:text-3xl font-adelphi">
-            12<sup>th</sup>-14<sup>th</sup> June, 20
-            <span className="text-fire-red font-bold">26</span>
+            11<sup>th</sup>-13<sup>th</sup> June, 20
+            <span className="text-fire-red font-bold">27</span>
           </p>
-          <p className="text-xl text-jonquil md:text-4xl font-thin mb-4">Cartmel Racecourse</p>
+          <p className="text-xl text-jonquil md:text-4xl font-thin mb-4">
+            Cartmel Racecourse
+          </p>
         </div>
       </Container>
     </>
