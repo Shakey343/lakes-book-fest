@@ -45,7 +45,7 @@ const HeroBanner = () => {
         <Button
           href="https://events.lakedistrictbookfestival.co.uk/checkout/new-session/store/71646/chk/202e?ref=store-widget&show_search_filter=true&show_date_filter=true&show_sort=true&show_event_filter=false"
           target="_blank"
-          initialWord="Join Us"
+          initialWord="Become a Friend"
           hoverWord="Buy Membership"
           className="mt-28 sm:mt-7 w-fit bg-jonquil text-night hover:bg-night self-center sm:self-auto"
         />
