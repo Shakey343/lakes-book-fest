@@ -4,6 +4,7 @@ import FeatherImg from "../../assets/gold_feather.png";
 import { useEffect, useState } from "react";
 import Navbar from "../Navbar";
 import NavbarMenu from "../NavbarMenu";
+import HeroVideo from "../HeroVideo";
 
 const HeroBanner = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -63,6 +64,7 @@ const HeroBanner = () => {
             Cartmel Racecourse
           </p>
         </div>
+        <HeroVideo />
       </Container>
     </>
   );
