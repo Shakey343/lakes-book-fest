@@ -9,6 +9,7 @@
   body {
     @apply font-serif;
     @apply cursor-default;
+    @apply bg-dark-grey;
   }
   h1 {
     @apply text-5xl;
@@ -49,4 +50,13 @@
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
+}
+
+#events {
+  transition: transform 2000ms;
+  transform: translateY(100vh);
+}
+
+body.hero-video-fading #events {
+  transform: translateY(0);
 }

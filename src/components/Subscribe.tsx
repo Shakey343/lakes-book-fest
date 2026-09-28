@@ -39,7 +39,7 @@ const Subscribe: React.FC<SubscribeProps> = ({ className }) => {
 
   return (
     <div className={cn("text-jonquil", className)}>
-      <h2 className="text-[32px] font-light mb-4 max-w-[400px] lg:max-w-[380px]">
+      <h2 className="text-[32px] text-center sm:text-right font-light mb-4 max-w-[400px] lg:max-w-[380px]">
         Subscribe to our newsletter
       </h2>
       <form

@@ -24,6 +24,7 @@ export default {
       'jonquil': '#d9b246',
       'fire-red': '#CD171A',
       'night': '#0A0A0A',
+      'contact-night': '#474747',
       'black-olive': '#39413D',
       'silver': '#EDEDED',
       'white': '#FDFDFD',

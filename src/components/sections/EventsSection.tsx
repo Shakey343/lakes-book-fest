@@ -33,10 +33,31 @@ interface EventsResponse {
   data: Event[];
 }
 
+const EVENTS_CACHE_KEY = "cachedEvents";
+
+const readCachedEvents = (): Event[] | null => {
+  try {
+    const cached = sessionStorage.getItem(EVENTS_CACHE_KEY);
+    return cached ? (JSON.parse(cached) as Event[]) : null;
+  } catch {
+    return null;
+  }
+};
+
+const writeCachedEvents = (events: Event[]) => {
+  try {
+    sessionStorage.setItem(EVENTS_CACHE_KEY, JSON.stringify(events));
+  } catch {
+    // ignore (e.g. storage disabled)
+  }
+};
+
 const EventsSection = () => {
-  const [events, setEvents] = useState<Event[]>([]);
+  const [events, setEvents] = useState<Event[]>(() => readCachedEvents() ?? []);
 
   useEffect(() => {
+    if (readCachedEvents()) return;
+
     const getEvents = async () => {
       try {
         const response = await axios.get<EventsResponse>(
@@ -45,6 +66,7 @@ const EventsSection = () => {
         // setEvents(shuffle(response.data.data).slice(0, 3));
         const withoutParkingEvents = response.data.data.filter((event) => !event.name.toLowerCase().includes("parking"))
         setEvents(withoutParkingEvents);
+        writeCachedEvents(withoutParkingEvents);
       } catch (error) {
         console.error("Failed to fetch events:", error);
       }
@@ -55,7 +77,7 @@ const EventsSection = () => {
 
   return (
     <Container
-      className="flex flex-col items-center pt-[80px] pb-[120px] bg-dark-grey text-night"
+      className="relative z-10 flex flex-col items-center pt-[80px] pb-[120px] bg-dark-grey text-night"
       id="events"
     >
       <div className="flex flex-col items-center gap-4 mb-16 text-center text-silver">

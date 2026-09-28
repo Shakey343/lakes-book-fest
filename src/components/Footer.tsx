@@ -13,7 +13,7 @@ import hadfieldTrustLogo from "../assets/BW_hadfieldtrustlogo.jpg";
 const Footer = () => {
   return (
     <Container
-      className="py-[32px] bg-night/80 flex flex-col lg:flex-row justify-between"
+      className="relative z-10 py-[32px] bg-contact-night flex flex-col lg:flex-row justify-between scroll-mt-20"
       id="contact"
     >
       <div className="flex flex-col-reverse lg:flex-col lg:justify-between text-jonquil lg:w-1/3 w-full text-center lg:text-left my-8">
