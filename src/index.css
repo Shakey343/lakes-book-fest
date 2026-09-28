@@ -47,6 +47,16 @@
   }
 }
 
+/* Hide iOS's native play overlay when autoplay is blocked; the poster shows instead */
+.hero-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+.hero-video::-webkit-media-controls {
+  display: none !important;
+}
+
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
