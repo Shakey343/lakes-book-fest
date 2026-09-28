@@ -5,7 +5,7 @@ import PlacesSection from "../sections/PlacesSection";
 
 const LocalGuidePage = () => {
   return (
-    <div className="mt-[80px]">
+    <div className="mt-[80px] bg-white">
       <FAQSection />
       <DosAndDontsSection />
       <LocationSection />

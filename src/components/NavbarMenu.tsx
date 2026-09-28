@@ -18,6 +18,16 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
     toggleMenu();
   };
 
+  const scrollToContact = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    document.body.classList.remove("stop-scrolling");
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+    toggleMenu();
+  };
+
   return (
     <>
       <NavLink
@@ -55,8 +65,8 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
       >
         Schools Programme
       </NavLink>
-
-      {/* <NavLink
+{/*
+      <NavLink
         to="/support"
         onClick={scrollAndCloseMenu}
         className={({ isActive }) =>
@@ -70,7 +80,7 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
 
       <a
         href="#contact"
-        onClick={toggleMenu}
+        onClick={scrollToContact}
         className="text-2xl md:text-sm xl:text-base text-white py-2 hover:text-fire-red/80"
       >
         Contact

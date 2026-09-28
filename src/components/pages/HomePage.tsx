@@ -13,7 +13,7 @@ const HomePage = () => {
 
       {/* <FoodVendorSection /> */}
 
-      <Container className="flex flex-wrap justify-evenly bg-silver" id="who">
+      <Container className="relative z-10 flex flex-wrap justify-evenly bg-silver" id="who">
         <WhoCards />
       </Container>
     </>
