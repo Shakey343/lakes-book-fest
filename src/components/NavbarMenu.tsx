@@ -1,8 +1,109 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import cn from "../utils/cn";
 import classNames from "classnames";
 import Button from "./Button";
+
+// Anchors match the section ids in FestivalGuideSection.tsx.
+const guideLinks = [
+  { to: "/guide#plan", label: "Plan your visit" },
+  { to: "/guide#day", label: "On the day" },
+  { to: "/guide#info", label: "Festival Information" },
+  { to: "/guide#getting-here", label: "Getting here" },
+  { to: "/guide#around", label: "Around Cartmel" },
+  { to: "/guide#faqs", label: "FAQs" },
+];
+
+interface GuideMenuItemProps {
+  scrollAndCloseMenu: () => void;
+  toggleMenu: () => void;
+}
+
+const GuideMenuItem: React.FC<GuideMenuItemProps> = ({
+  scrollAndCloseMenu,
+  toggleMenu,
+}) => {
+  const [open, setOpen] = useState(false);
+
+  const onItemClick = () => {
+    document.body.classList.remove("stop-scrolling");
+    setOpen(false);
+    (document.activeElement as HTMLElement | null)?.blur();
+    toggleMenu();
+  };
+
+  return (
+    <div
+      // md:py-4 / md:-my-4 stretch the hover area to the full 80px bar without
+      // changing layout, so the panel (top-full) sits flush with the bar and the
+      // pointer never leaves the group on its way down. No overlay on the link.
+      className="group relative flex flex-wrap items-center gap-2 md:py-4 md:-my-4"
+      onKeyDown={(event) => {
+        if (event.key === "Escape") {
+          setOpen(false);
+          (document.activeElement as HTMLElement | null)?.blur();
+        }
+      }}
+    >
+      <NavLink
+        to="/guide"
+        onClick={scrollAndCloseMenu}
+        className={({ isActive }) =>
+          isActive
+            ? "text-2xl md:text-sm xl:text-base text-fire-red py-2 border-b-2 border-fire-red"
+            : "text-2xl md:text-sm xl:text-base text-white py-2 hover:text-fire-red/80"
+        }
+      >
+        Festival Guide
+      </NavLink>
+
+      <button
+        type="button"
+        aria-expanded={open}
+        aria-label="Festival Guide sections"
+        onClick={() => setOpen((prev) => !prev)}
+        className="p-2 text-white hover:text-jonquil focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-jonquil"
+      >
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 12 12"
+          className={cn(
+            "h-3 w-3 transition-transform",
+            open && "rotate-180",
+            "md:group-hover:rotate-180 md:group-focus-within:rotate-180",
+          )}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path d="M2 4l4 4 4-4" />
+        </svg>
+      </button>
+
+      <ul
+        className={cn(
+          "basis-full pl-4 pb-2",
+          "md:absolute md:top-full md:left-0 md:z-40 md:min-w-[240px] md:basis-auto md:bg-night md:border-t-2 md:border-jonquil md:pl-0 md:py-2 md:shadow-lg",
+          open
+            ? "block"
+            : "hidden md:group-hover:block md:group-focus-within:block",
+        )}
+      >
+        {guideLinks.map((link) => (
+          <li key={link.to}>
+            <Link
+              to={link.to}
+              onClick={onItemClick}
+              className="block py-2 text-xl md:px-5 md:text-sm xl:text-base text-white hover:text-jonquil focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-jonquil"
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 interface NavbarMenuItemsProps {
   scrollToTop?: () => void;
@@ -42,17 +143,10 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
         Home
       </NavLink>
 
-      <NavLink
-        to="/guide"
-        onClick={scrollAndCloseMenu}
-        className={({ isActive }) =>
-          isActive
-            ? "text-2xl md:text-sm xl:text-base text-fire-red py-2 border-b-2 border-fire-red"
-            : "text-2xl md:text-sm xl:text-base text-white py-2 hover:text-fire-red/80"
-        }
-      >
-        Festival Guide
-      </NavLink>
+      <GuideMenuItem
+        scrollAndCloseMenu={scrollAndCloseMenu}
+        toggleMenu={toggleMenu}
+      />
 
       <NavLink
         to="/schools"
