@@ -65,7 +65,7 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
       >
         Schools Programme
       </NavLink>
-{/*
+
       <NavLink
         to="/support"
         onClick={scrollAndCloseMenu}
@@ -76,7 +76,7 @@ const NavbarMenuItems: React.FC<NavbarMenuItemsProps> = ({
         }
       >
         Support Us
-      </NavLink> */}
+      </NavLink>
 
       <a
         href="#contact"
