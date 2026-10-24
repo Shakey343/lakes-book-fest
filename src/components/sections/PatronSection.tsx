@@ -18,7 +18,7 @@ const PatronSection = () => {
   return (
     <Container className="pt-[80px] pb-[120px] bg-map-grey">
       <h2 className="text-[44px] font-light text-center sm:text-left pb-10">
-        Festival Patrons
+        Founder Patrons
       </h2>
       <div className="flex flex-wrap justify-evenly gap-[40px]">
         <p className="flex flex-wrap gap-2">
