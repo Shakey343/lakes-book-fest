@@ -4,7 +4,7 @@ import cn from "../../utils/cn";
 const FRIEND_URL =
   "https://events.lakedistrictbookfestival.co.uk/checkout/new-session/store/71646/chk/202e?ref=store-widget&show_search_filter=true&show_date_filter=true&show_sort=true&show_event_filter=false";
 const EMAIL = "mailto:festivalproducer@lakedistrictbookfestival.co.uk";
-const DECK = "/downloadable_patron_and_sponsorship_information.pdf";
+const DECK = "/downloadable_patron_and_sponsorship_information_2026.pdf";
 
 type Tier = {
   id: string;
@@ -29,10 +29,10 @@ const tiers: Tier[] = [
     badge: "£40",
     badgeSub: "per person, p.a.",
     description:
-      "Advance priority booking guaranteeing access to all your chosen talks, the Friends' newsletter with news, insights and special offers, and an annual Friends' reception.",
+      "Priority booking on all your chosen talks, a Friends' newsletter with news and special offers, and an annual Friends' reception.",
     href: FRIEND_URL,
     target: "_blank",
-    buttonWord: "Buy membership",
+    buttonWord: "Buy a membership",
     buttonHover: "Join online",
     circleClass: "bg-light-grey border-jonquil",
     textClass: "text-night",
@@ -45,10 +45,10 @@ const tiers: Tier[] = [
     badge: "£750",
     badgeSub: "per person, p.a.",
     description:
-      "Priority booking and parking, complimentary tickets, and an annual gala event in London or Cumbria. Get in touch to hear everything a Patron receives.",
+      "Priority booking and parking, complimentary tickets, and an annual gala in London or Cumbria. Email us for the full list of benefits.",
     href: EMAIL,
-    buttonWord: "Email to find out more",
-    buttonHover: "Email us",
+    buttonWord: "Email to enquire",
+    buttonHover: "Email us now",
     circleClass: "bg-night border-jonquil",
     textClass: "text-silver",
     badgeClass: "bg-jonquil text-night",
@@ -60,7 +60,7 @@ const tiers: Tier[] = [
     badge: "Bespoke",
     badgeSub: "tailored to you",
     description:
-      "From in-kind contributions and corporate hosting to taking ownership of the Hospitality Tent. Download the deck for guidance on the options.",
+      "From in-kind support and corporate hosting to owning the Hospitality Tent. Download our deck to see all the options.",
     href: DECK,
     target: "_blank",
     buttonWord: "Download the deck",
