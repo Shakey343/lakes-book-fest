@@ -150,7 +150,11 @@ const GuideMap = ({ className }: { className?: string }) => {
         );
       })}
 
-      <div className="absolute bottom-3 right-80 flex flex-wrap items-center gap-x-4 gap-y-1 rounded-full bg-night/85 px-4 py-2 text-xs text-white">
+      {/* Map key: stacked; top left on phone, smaller in the bottom right on desktop. */}
+      <div className="absolute left-3 top-3 flex flex-col gap-1.5 rounded bg-night/85 px-3 py-2 text-xs text-white lg:inset-auto lg:bottom-3 lg:right-3 lg:gap-1 lg:px-2.5 lg:py-1.5 lg:text-[11px]">
+        <p className="text-[10px] uppercase tracking-[0.2em] text-silver lg:text-[9px]">
+          Key
+        </p>
         <span className="flex items-center gap-2">
           <span className="h-3 w-3 rounded-full ring-2 ring-jonquil" />
           Festival venue

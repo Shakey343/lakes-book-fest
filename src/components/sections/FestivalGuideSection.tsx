@@ -173,7 +173,9 @@ const FestivalGuideSection = () => {
           </div>
         </div>
 
-        <GuideMap className="mt-10 lg:absolute lg:inset-y-0 lg:right-0 lg:mt-0 lg:h-full lg:w-auto" />
+        {/* Below lg: keeps the Container's left gap, bleeds to the right screen edge and
+            down over the section's bottom padding (pb-10) so it meets the next section. */}
+        <GuideMap className="-mb-10 -mr-4 mt-10 w-[calc(100%+1rem)] sm:-mr-8 sm:w-[calc(100%+2rem)] lg:absolute lg:inset-y-0 lg:right-0 lg:mb-0 lg:mr-0 lg:mt-0 lg:h-full lg:w-auto" />
       </Container>
 
       <Container className="bg-silver py-20 lg:py-28">
