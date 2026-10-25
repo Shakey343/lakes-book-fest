@@ -1,4 +1,5 @@
 import Button from "../Button";
+import DownloadImg from "../../assets/download.png";
 import cn from "../../utils/cn";
 
 const FRIEND_URL =
@@ -20,6 +21,7 @@ type Tier = {
   textClass: string;
   badgeClass: string;
   buttonClass: string;
+  showDownloadIcon?: boolean;
 };
 
 const tiers: Tier[] = [
@@ -69,6 +71,7 @@ const tiers: Tier[] = [
     textClass: "text-night",
     badgeClass: "bg-fire-red text-silver",
     buttonClass: "bg-fire-red text-silver hover:bg-night",
+    showDownloadIcon: true,
   },
 ];
 
@@ -104,6 +107,21 @@ const SupportSection = () => {
               <p className="font-semibold text-[48px] group-hover:text-[50px] transition-all text-center">
                 {tier.name}
               </p>
+              {tier.showDownloadIcon && (
+                // download.png has wide transparent margins; the img is scaled and
+                // offset inside a small clipped box so only the arrow shows.
+                <span
+                  aria-hidden="true"
+                  className="relative mt-2 block h-[69px] w-[42px] overflow-hidden transition-transform group-hover:translate-y-1"
+                >
+                  <img
+                    src={DownloadImg}
+                    alt=""
+                    className="absolute max-w-none"
+                    style={{ width: 147, left: -52, top: -57 }}
+                  />
+                </span>
+              )}
               <div
                 className={cn(
                   "flex flex-col items-center justify-center absolute rounded-full -top-6 -right-4 md:-right-10 h-[120px] w-[120px] md:h-[130px] md:w-[130px] shadow-md",
@@ -121,18 +139,11 @@ const SupportSection = () => {
             <p className="text-center text-night text-[18px] leading-snug">
               {tier.description}
             </p>
-            <Button
-              className={cn("w-fit", tier.buttonClass)}
-              href={tier.href}
-              target={tier.target}
-              initialWord={tier.buttonWord}
-              hoverWord={tier.buttonHover}
-            />
           </div>
         ))}
       </div>
       <Button
-        className="w-fit bg-jonquil text-night hover:bg-grey"
+        className="w-fit bg-jonquil text-night hover:bg-grey hover:text-night"
         href={EMAIL}
         initialWord="Questions?"
         hoverWord="Email us"
