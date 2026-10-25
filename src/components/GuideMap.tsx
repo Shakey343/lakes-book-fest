@@ -20,8 +20,8 @@ const markers: Marker[] = [
     id: "festival",
     title: "The Lake District Book Festival",
     detail: "Cartmel Racecourse",
-    x: 62.5,
-    y: 35.3,
+    x: 60.6,
+    y: 40.5,
     kind: "festival",
     side: "top",
     align: "center",
@@ -89,7 +89,7 @@ const GuideMap = ({ className }: { className?: string }) => {
       />
 
       {/* Fades the map into the section background behind the welcome text. */}
-      <div className="pointer-events-none absolute inset-0 lg:bg-gradient-to-r lg:from-map-grey lg:from-15% lg:via-map-grey/85 lg:via-35% lg:to-transparent lg:to-60%" />
+      <div className="pointer-events-none absolute inset-0 lg:bg-gradient-to-r lg:from-map-grey lg:from-15% lg:via-map-grey/85 lg:via-35% lg:to-transparent lg:to-60% xl:from-5% xl:via-10%" />
 
       {markers.map((marker) => {
         const isActive = active === marker.id;
@@ -150,7 +150,7 @@ const GuideMap = ({ className }: { className?: string }) => {
         );
       })}
 
-      <div className="absolute bottom-3 left-3 flex flex-wrap items-center gap-x-4 gap-y-1 rounded-full bg-night/85 px-4 py-2 text-xs text-white">
+      <div className="absolute bottom-3 right-80 flex flex-wrap items-center gap-x-4 gap-y-1 rounded-full bg-night/85 px-4 py-2 text-xs text-white">
         <span className="flex items-center gap-2">
           <span className="h-3 w-3 rounded-full ring-2 ring-jonquil" />
           Festival venue
