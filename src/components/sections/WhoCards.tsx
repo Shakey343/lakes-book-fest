@@ -50,7 +50,7 @@ const WhoCards = () => {
   return team.map((member, i) => (
     <a
       key={i}
-      className="flex items-center justify-center flex-col gap-[40px] mx-2 md:mx-0 my-6 md:w-1/2 min-h-[600px] group"
+      className="flex items-center flex-col gap-[40px] w-full md:w-1/2 group"
       href={member.webUrl}
       target="_blank"
     >
@@ -60,7 +60,7 @@ const WhoCards = () => {
         src={member.imgUrl}
         alt={member.imgUrlAlt}
       />
-      <h4 className="text-night text-[22px] group-hover:text-[24px] transition-all font-adelphi">
+      <h4 className="text-night text-[22px] group-hover:scale-110 transition-transform font-adelphi text-center">
         {member.role}
       </h4>
     </a>

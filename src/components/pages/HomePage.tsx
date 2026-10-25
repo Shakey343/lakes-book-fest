@@ -15,7 +15,10 @@ const HomePage = () => {
 
       {/* <FoodVendorSection /> */}
 
-      <Container className="relative z-10 flex flex-wrap justify-evenly bg-silver" id="who">
+      <Container
+        className="relative z-10 flex flex-wrap justify-evenly gap-y-[60px] pt-[80px] pb-[120px] bg-silver"
+        id="who"
+      >
         <WhoCards />
       </Container>
 
