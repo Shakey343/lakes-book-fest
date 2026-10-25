@@ -11,6 +11,10 @@
 // import MikeImg from "../../assets/Mike_Gibbons.jpg"
 // import PeterImg from "../../assets/peter-modified-small.jpg";
 // import cn from "../../utils/cn";
+import { ReactNode } from "react";
+import AlexBoardImg from "../../assets/Alex_Scott_board.jpg";
+import CharlieBoardImg from "../../assets/Charlie_Pattinson_board.png";
+import cn from "../../utils/cn";
 import Container from "../Container";
 
 type Person = {
@@ -21,8 +25,37 @@ type Person = {
   // imgUrlAlt: string;
 };
 
-// TODO: board members (4) not yet confirmed.
-const board: Person[] = [];
+type BoardMember = {
+  name: string;
+  role: string;
+  about: string;
+  imgUrl: string;
+  imgUrlAlt: string;
+  imgClassName?: string;
+};
+
+// TODO: two further board members not yet confirmed.
+const board: BoardMember[] = [
+  {
+    name: "Alexander Scott",
+    role: "HM Lord-Lieutenant of Cumbria",
+    about:
+      "Alex is a businessman, philanthropist and landowner. He co-founded Family Business UK and served as a Director on its international counterpart. He serves as a Trustee of the Grosvenor Estate, Cumbria Community Foundation and advises family businesses. He has served for over 40 years as a Trustee of the Francis Scott Trust, the largest independent funder of charities for young people in Cumbria and N. Lancs. He lives in Cumbria with his wife Sam and they have 3 adult children.",
+    imgUrl: AlexBoardImg,
+    imgUrlAlt:
+      "Portrait of Alexander Scott smiling in a blue jacket in a garden.",
+    imgClassName: "object-[50%_22%]",
+  },
+  {
+    name: "Charlie Pattinson",
+    role: "TV Drama Producer & Founder, New Pictures",
+    about:
+      "Charlie Pattinson is a TV Drama Producer, Executive Producer and Founder / Non-Executive Chair of New Pictures. Before this, he co-founded Company Pictures, one of the UK’s largest Independent TV and Film Drama production companies. Charlie’s Producer and Exec Producer credits include Skins, Shameless, Our Friends in the North, The Missing, Wild at Heart, Elizabeth 1 and Catherine the Great with Helen Mirren - among many others. Charlie’s TV work has won 26 Baftas, 5 Golden Globes, 15 Emmy awards and over 30 RTS awards.",
+    imgUrl: CharlieBoardImg,
+    imgUrlAlt: "Black and white portrait of Charlie Pattinson smiling.",
+    imgClassName: "object-center",
+  },
+];
 
 const team: Person[] = [
   {
@@ -155,28 +188,66 @@ const PersonList = ({ people }: { people: Person[] }) => {
   );
 };
 
+const BoardList = ({ members }: { members: BoardMember[] }) => (
+  <ul className="flex flex-col gap-10">
+    {members.map((member) => (
+      <li
+        key={member.name}
+        className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6"
+      >
+        <div>
+          <div className="text-center sm:text-left">
+            <h4 className="text-night text-2xl font-georgia">{member.name}</h4>
+            <p className="text-contact-night text-lg font-adelphi">
+              {member.role}
+            </p>
+          </div>
+          <p className="text-contact-night font-light leading-relaxed">
+            {member.about}
+          </p>
+        </div>
+        <img
+          className={cn(
+            "order-first sm:order-last shrink-0 w-[180px] h-[180px] aspect-square rounded-full my-auto object-cover bg-night border-2 border-jonquil",
+            member.imgClassName,
+          )}
+          src={member.imgUrl}
+          alt={member.imgUrlAlt}
+        />
+      </li>
+    ))}
+  </ul>
+);
+
 const PanelBox = ({
   title,
-  people,
+  children,
 }: {
   title: string;
-  people: Person[];
+  children: ReactNode;
 }) => (
   <div className="card bg-silver">
     <h3 className="text-night text-3xl font-adelphi font-light text-center sm:text-left">
       {title}
     </h3>
     <hr className="w-24 border-t-2 border-jonquil mt-4 mb-4 mx-auto sm:mx-0" />
-    <PersonList people={people} />
+    {children}
   </div>
 );
 
 const AdvisoryPanel = () => {
   return (
-    <Container className="pt-[80px] pb-[120px] bg-light-grey relative z-10" id="otherWho">
+    <Container
+      className="pt-[80px] pb-[120px] bg-light-grey relative z-10"
+      id="otherWho"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        <PanelBox title="Board" people={board} />
-        <PanelBox title="Advisory Panel" people={team} />
+        <PanelBox title="Board">
+          <BoardList members={board} />
+        </PanelBox>
+        <PanelBox title="Advisory Panel">
+          <PersonList people={team} />
+        </PanelBox>
       </div>
     </Container>
   );
