@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
   faInstagram,
-  // faXTwitter
+  faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,10 +19,10 @@ const links = [
     link: "https://www.facebook.com/profile.php?id=61565796031388",
     icon: faFacebookF,
   },
-  // {
-  //   link: "https://x.com/LakeBook22264",
-  //   icon: faXTwitter,
-  // },
+  {
+    link: "https://www.youtube.com/@TheLakeDistrictBookFestival",
+    icon: faYoutube,
+  },
 ];
 
 const Socials = () => {

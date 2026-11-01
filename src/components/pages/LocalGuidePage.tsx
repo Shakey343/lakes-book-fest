@@ -1,15 +1,17 @@
-import DosAndDontsSection from "../sections/DosAndDontsSection";
-import FAQSection from "../sections/FAQSection";
-import LocationSection from "../sections/LocationSection";
-import PlacesSection from "../sections/PlacesSection";
+// import DosAndDontsSection from "../sections/DosAndDontsSection";
+// import FAQSection from "../sections/FAQSection";
+import FestivalGuideSection from "../sections/FestivalGuideSection";
+// import LocationSection from "../sections/LocationSection";
+// import PlacesSection from "../sections/PlacesSection";
 
 const LocalGuidePage = () => {
   return (
     <div className="mt-[80px] bg-white">
-      <FAQSection />
-      <DosAndDontsSection />
-      <LocationSection />
-      <PlacesSection />
+      <FestivalGuideSection />
+      {/* <LocationSection /> */}
+      {/* <PlacesSection /> */}
+      {/* <FAQSection /> */}
+      {/* <DosAndDontsSection /> */}
     </div>
   )
 }

@@ -6,11 +6,11 @@ interface HeroVideoProps {
 }
 
 const videoUrl =
-  "https://res.cloudinary.com/dov7jlxo5/video/upload/v1785679695/web_main_page_cwpxna.mp4";
+  "https://res.cloudinary.com/dov7jlxo5/video/upload/v1785679695/web_main_page_ly6eno.mp4";
 
 // First frame of the video, shown while loading or if autoplay is blocked
 const posterUrl =
-  "https://res.cloudinary.com/dov7jlxo5/video/upload/so_0,q_auto,w_1280/v1785679695/web_main_page_cwpxna.jpg";
+  "https://res.cloudinary.com/dov7jlxo5/video/upload/so_0,q_auto,w_1280/v1785679695/web_main_page_ly6eno.jpg";
 
 // Don't hold the intro hostage if the video never becomes playable
 const LOAD_FALLBACK_MS = 3000;

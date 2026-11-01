@@ -19,8 +19,8 @@ const LocationSection = () => {
             </h3>
             <ul className="leading-relaxed">
               <li>Cark-in-Cartmel · 5 minutes drive</li>
-              <li>Oxenholme · 30 minutes</li>
-              <li>Lancaster · 40 minutes</li>
+              <li>Oxenholme · 30 minutes drive</li>
+              <li>Lancaster · 40 minutes drive</li>
             </ul>
           </div>
           <div className="flex flex-col gap-[10px]">
