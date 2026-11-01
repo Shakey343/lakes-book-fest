@@ -36,7 +36,7 @@ const Button = ({
       <span
         className={cn(
           "col-start-1 row-start-1",
-          hoverWord && "group-hover:invisible group-focus-visible:invisible"
+          hoverWord && "group-hover:invisible group-focus-visible:invisible font-georgia "
         )}
       >
         {initialWord}
