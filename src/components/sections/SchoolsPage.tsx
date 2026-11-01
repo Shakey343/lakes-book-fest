@@ -10,8 +10,8 @@ const SchoolsPage = () => {
       >
         <div className="flex flex-col gap-[60px] flex-1 min-w-0">
           <div className="flex flex-col gap-[12px]">
-            <h2 className="text-night font-light text-[44px] uppercase">
-              Cumbria Young Readers
+            <h2 className="text-night font-light text-5xl">
+              Schools Programme
             </h2>
             <p className="text-contact-night italic text-[24px]">
               The next chapter...
@@ -48,7 +48,7 @@ const SchoolsPage = () => {
               </li>
               <li>
                 <span className="text-night font-semibold">
-                  Cumbria Young Readers' Mission:
+                  Mission:
                 </span>{" "}
                 to transport 14-18 year old students beyond the school walls and
                 give a sense of the tremendous possibility of the written and
