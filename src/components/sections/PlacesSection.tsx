@@ -61,9 +61,9 @@ const PlacesSection = () => {
       </h2>
 
       <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-3">
-        <PlacesList title="Places to Stay" places={stayPlaces} />
-        <PlacesList title="Places to Eat" places={eatPlaces} />
-        <PlacesList title="Places to Visit" places={visitPlaces} />
+        <PlacesList title="Places to stay" places={stayPlaces} />
+        <PlacesList title="Places to eat" places={eatPlaces} />
+        <PlacesList title="Places to visit" places={visitPlaces} />
       </div>
     </section>
   );

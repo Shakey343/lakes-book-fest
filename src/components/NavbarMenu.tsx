@@ -8,7 +8,7 @@ import Button from "./Button";
 const guideLinks = [
   { to: "/guide#plan", label: "Plan your visit" },
   { to: "/guide#day", label: "On the day" },
-  { to: "/guide#info", label: "Festival Information" },
+  { to: "/guide#info", label: "Festival information" },
   { to: "/guide#getting-here", label: "Getting here" },
   { to: "/guide#around", label: "Around Cartmel" },
   { to: "/guide#faqs", label: "FAQs" },

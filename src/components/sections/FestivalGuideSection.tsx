@@ -9,7 +9,7 @@ import PlacesSection from "./PlacesSection";
 
 const locationGroups = [
   {
-    title: "Closest Train Stations",
+    title: "Closest train stations",
     items: [
       "Cark-in-Cartmel · 5 minutes drive",
       "Oxenholme · 30 minutes drive",
@@ -17,7 +17,7 @@ const locationGroups = [
     ],
   },
   {
-    title: "By Car",
+    title: "By car",
     items: [
       "M6 J36 · 15 miles",
       "Manchester · 85 miles",
@@ -27,7 +27,7 @@ const locationGroups = [
     ],
   },
   {
-    title: "By Train",
+    title: "By train",
     items: ["London-Cark · 3h45-4h15"],
   },
 ];
@@ -84,7 +84,7 @@ const faqs = [
   },
   {
     q: "Are books available to buy?",
-    a: "Absolutely. Books can be bought during signings and from the Festival Bookshop.",
+    a: "Absolutely. Books can be bought during signings and from the festival bookshop.",
   },
 ];
 
@@ -186,11 +186,11 @@ const FestivalGuideSection = () => {
           </h2>
 
           <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-2">
-            <Card title="How Does The Festival Work?">
+            <Card title="How does the festival work?">
               <BulletList items={howItWorks} />
             </Card>
 
-            <Card title="How to Book Tickets">
+            <Card title="How to book tickets">
               <NumberedList items={bookingSteps} />
               {/* <div className="my-8 w-full flex justify-start">
           <Button
@@ -210,20 +210,20 @@ const FestivalGuideSection = () => {
             On the day
           </h2>
 
-          <Card title="What Happens on the Day?">
+          <Card title="What happens on the day?">
             <NumberedList items={daySteps} />
           </Card>
         </section>
 
         {/* Know before you go */}
         <section id="info" className="scroll-mt-24 mb-20">
-          <h2 className="mb-2 text-center text-[44px] font-light leading-none sm:text-left">
-            Festival Information
+          <h2 className="mb-10 text-center text-[44px] font-light leading-none sm:text-left">
+            Festival information
           </h2>
-          <p className="mb-10 text-center text-sm sm:text-left md:text-lg">
+          {/* <p className="mb-10 text-center text-sm sm:text-left md:text-lg">
             Everything you need to know before arriving at The Lake District
             Book Festival.
-          </p>
+          </p> */}
 
           <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-2">
             {/* Accessibility */}
@@ -312,14 +312,23 @@ const FestivalGuideSection = () => {
                 <p>Availability on the day cannot be guaranteed.</p>
               </div>
             </Card>
+          </div>
+        </section>
 
+        {/* Getting here (was LocationSection: Location & Links) */}
+        <section id="getting-here" className="scroll-mt-24 mb-20">
+          <h2 className="mb-10 text-center text-[44px] font-light leading-none sm:text-left">
+            Getting here
+          </h2>
+
+          <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-3">
             {/* Travel */}
-            <Card title="Travel" className="md:col-span-2">
+            <Card title="Travel" className="md:col-span-3">
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
                 <div>
                   <h4 className="mb-4 font-adelphi text-xl text-night">
                     <span className="font-adelphi font-normal underline decoration-jonquil decoration-2 underline-offset-4">
-                      By Taxi
+                      By taxi
                     </span>
                   </h4>
 
@@ -336,7 +345,7 @@ const FestivalGuideSection = () => {
                 <div>
                   <h4 className="mb-4 font-adelphi text-xl text-night">
                     <span className="font-adelphi font-normal underline decoration-jonquil decoration-2 underline-offset-4">
-                      By Car
+                      By car
                     </span>
                   </h4>
 
@@ -351,16 +360,7 @@ const FestivalGuideSection = () => {
                 </div>
               </div>
             </Card>
-          </div>
-        </section>
 
-        {/* Getting here (was LocationSection: Location & Links) */}
-        <section id="getting-here" className="scroll-mt-24 mb-20">
-          <h2 className="mb-10 text-center text-[44px] font-light leading-none sm:text-left">
-            Getting here
-          </h2>
-
-          <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-3">
             {locationGroups.map((group) => (
               <Card key={group.title} title={group.title}>
                 <ul className="space-y-3 leading-relaxed text-contact-night">
@@ -379,7 +379,7 @@ const FestivalGuideSection = () => {
         {/* FAQs */}
         <section id="faqs" className="scroll-mt-24">
           <h2 className="mb-10 text-center text-[44px] font-light leading-none sm:text-left">
-            Frequently Asked Questions
+            Frequently asked questions
           </h2>
 
           <div className="card divide-y divide-dark-grey/40 !py-2">
