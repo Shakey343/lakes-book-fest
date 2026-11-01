@@ -124,7 +124,7 @@ const EventsSection = () => {
       <div className="flex flex-col items-center gap-4 mb-16 text-center text-silver">
         {/* <p className="font-thin text-lg">A sample from the</p> */}
         <p className="font-thin text-lg">2026</p>
-        <h2 className="font-medium text-6xl">Past Events</h2>
+        <h2 className="font-medium text-6xl">Highlights</h2>
         <hr className="w-1/2 mx-auto" />
       </div>
       <div className="flex justify-center flex-wrap gap-4 w-full">
