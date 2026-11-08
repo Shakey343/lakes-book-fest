@@ -33,7 +33,7 @@ const SchoolsPage = () => {
               </li>
               <li>
                 <span className="text-night font-semibold">Author visits:</span>{" "}
-                talks in partner schools by grown-up and successful authors such
+                visits to partner schools by acclaimed authors such
                 as Anthony McGowan (autumn 2026) & Lee Child (spring 2027)
               </li>
               <li>

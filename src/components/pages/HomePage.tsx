@@ -11,8 +11,10 @@ const HomePage = () => {
     <>
       <HeroBanner />
 
+
       <EventsSection />
 
+      <FoundingMessage />
       {/* <FoodVendorSection /> */}
 
       <Container
@@ -23,8 +25,6 @@ const HomePage = () => {
       </Container>
 
       <AdvisoryPanel />
-
-      <FoundingMessage />
     </>
   );
 };
