@@ -5,7 +5,7 @@ import cn from "../../utils/cn";
 const FRIEND_URL =
   "https://events.lakedistrictbookfestival.co.uk/checkout/new-session/store/71646/chk/202e?ref=store-widget&show_search_filter=true&show_date_filter=true&show_sort=true&show_event_filter=false";
 const EMAIL = "mailto:festivalproducer@lakedistrictbookfestival.co.uk";
-const DECK = "/downloadable_patron_and_sponsorship_information_2026.pdf";
+const DECK = "/Lake District Book Festival Sponsorship Deck 2027.pdf";
 
 type Tier = {
   id: string;

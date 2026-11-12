@@ -50,7 +50,7 @@ const board: BoardMember[] = [
     name: "Charlie Pattinson",
     role: "TV Drama Producer & Founder, New Pictures",
     about:
-      "Charlie Pattinson is a TV Drama Producer, Executive Producer and Founder / Non-Executive Chair of New Pictures. Before this, he co-founded Company Pictures, one of the UK’s largest Independent TV and Film Drama production companies. Charlie’s Producer and Exec Producer credits include Skins, Shameless, Our Friends in the North, The Missing, Wild at Heart, Elizabeth 1 and Catherine the Great with Helen Mirren - among many others. Charlie’s TV work has won 26 Baftas, 5 Golden Globes, 15 Emmy awards and over 30 RTS awards.",
+      "Charlie Pattinson is a TV Drama Producer, Executive Producer and Founder / Non-Executive Chair of New Pictures. Before this, he co-founded Company Pictures, one of the UK’s largest Independent TV and Film Drama production companies. Charlie’s Producer and Exec Producer credits include Skins, Shameless, Our Friends in the North, The Missing, Wild at Heart, Elizabeth 1 and Catherine the Great with Helen Mirren - among many others. Charlie’s TV work has won 26 Baftas, 5 Golden Globes, 15 Emmy awards and over 30 RTS awards. Charlie has lived in Cumbria all his life.",
     imgUrl: CharlieBoardImg,
     imgUrlAlt: "Black and white portrait of Charlie Pattinson smiling.",
     imgClassName: "object-center",
